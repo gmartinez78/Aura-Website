@@ -487,7 +487,7 @@ a.chip:hover { border-color: var(--aura-grape); color: var(--aura-grape); }
 @media (min-width: 900px) { .services { grid-template-columns: repeat(4, minmax(0,1fr)); gap: 12px; } .service-card { min-height: 590px; } .service-card:hover .service-card__image, .service-card--open .service-card__image { height: 290px; } }
 
 /* ---------- Servicios: scroll showcase ---------- */
-#servicios { overflow: hidden; border-radius: 0 0 32px 32px; background: #080808; color: #f7f5f1; }
+#servicios { overflow: clip; border-radius: 0 0 32px 32px; background: #080808; color: #f7f5f1; }
 #servicios .eyebrow { color: #a98aff; } #servicios h2 { color: #fff; }
 .services-scroll { display: flex; flex-direction: column; gap: 0; }
 .services-story__copy { display: none; }
