@@ -62,8 +62,15 @@ document.querySelectorAll(".hero__headline-layer h1 span").forEach((word) => {
 // 5. Services showcase: activate each scene as it enters the viewport.
 const serviceScenes = document.querySelectorAll(".service-scene");
 if (serviceScenes.length && "IntersectionObserver" in window) {
+  const stickyCopy = document.querySelector(".services-story__copy");
   const serviceObserver = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => entry.target.classList.toggle("is-visible", entry.isIntersecting));
+    entries.forEach((entry) => {
+      entry.target.classList.toggle("is-visible", entry.isIntersecting);
+      if (entry.isIntersecting && stickyCopy) {
+        const source = entry.target.querySelector(".service-scene__copy");
+        stickyCopy.innerHTML = source.innerHTML;
+      }
+    });
   }, { threshold: 0.35 });
   serviceScenes.forEach((scene, index) => {
     if (index === 0) scene.classList.add("is-visible");
