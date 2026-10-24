@@ -396,6 +396,23 @@ a.chip:hover { border-color: var(--aura-grape); color: var(--aura-grape); }
   .metrics { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 }
 
+/* ---------- Agentes: dashboard visual ---------- */
+.section--ink:has(.agents-visual) { overflow: hidden; background: radial-gradient(circle at 18% 42%, rgba(155,132,255,.32), transparent 34%), radial-gradient(circle at 82% 72%, rgba(65,214,215,.16), transparent 30%), #eef0ff; color: var(--aura-ink); }
+.section--ink:has(.agents-visual) .agents__head p { color: rgba(30,27,75,.72); }
+.agents-visual { position: relative; margin-bottom: var(--space-6); border-radius: 28px; overflow: hidden; background: linear-gradient(145deg, rgba(255,255,255,.42), rgba(206,211,255,.28)); box-shadow: 0 24px 50px rgba(30,27,75,.16); }
+.agents-visual img { display: block; width: 100%; height: auto; mix-blend-mode: multiply; }
+.section--ink:has(.agents-visual) .agent-card { background: rgba(255,255,255,.7); border-color: rgba(78,42,128,.14); box-shadow: 0 12px 24px rgba(30,27,75,.08); }
+.section--ink:has(.agents-visual) .agent-card p { color: rgba(30,27,75,.72); }
+.section--ink:has(.agents-visual) .metrics { background: rgba(255,255,255,.78); box-shadow: 0 14px 30px rgba(30,27,75,.1); }
+@media (min-width: 900px) {
+  .section--ink:has(.agents-visual) .container { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.12fr); grid-template-areas: "visual head" "visual cards" "metrics cards"; gap: var(--space-6) var(--space-10); align-items: start; }
+  .section--ink:has(.agents-visual) .agents-visual { grid-area: visual; margin: 0; align-self: start; }
+  .section--ink:has(.agents-visual) .agents__head { grid-area: head; display: block; }
+  .section--ink:has(.agents-visual) .agents__head p { max-width: 520px; margin-top: var(--space-4); }
+  .section--ink:has(.agents-visual) .agent-grid { grid-area: cards; grid-template-columns: repeat(2, minmax(0,1fr)); }
+  .section--ink:has(.agents-visual) .metrics { grid-area: metrics; grid-template-columns: repeat(2, minmax(0,1fr)); }
+}
+
 /* ---------- Servicios ---------- */
 .services { display: flex; flex-direction: column; border-radius: var(--radius-lg); background: var(--aura-surface); border: 1px solid var(--aura-sand); overflow: hidden; list-style: none; margin: 0; padding: 0; }
 .service-card { display: flex; justify-content: space-between; align-items: center; gap: var(--space-3); min-height: 64px; padding: 14px 18px; color: var(--aura-ink); text-decoration: none; border-bottom: 1px solid var(--aura-sand); }
