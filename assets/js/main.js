@@ -59,23 +59,52 @@ document.querySelectorAll(".hero__headline-layer h1 span").forEach((word) => {
   });
 });
 
-// 5. Services showcase: activate each scene as it enters the viewport.
-const serviceScenes = document.querySelectorAll(".service-scene");
-if (serviceScenes.length && "IntersectionObserver" in window) {
+// 5. Services showcase: the left copy stays pinned while each right-hand
+// scene takes over the viewport. This mirrors the Design Monks scroll rhythm:
+// one scene is active at a time, then the next pair of images replaces it.
+const serviceScenes = [...document.querySelectorAll(".service-scene")];
+if (serviceScenes.length) {
   const stickyCopy = document.querySelector(".services-story__copy");
-  const updateServiceScene = () => {
-    const center = window.innerHeight * .5;
-    let active = serviceScenes[0];
-    let distance = Infinity;
-    serviceScenes.forEach((scene) => {
+  let activeScene = null;
+  let ticking = false;
+
+  const renderServiceScene = () => {
+    ticking = false;
+    const focusLine = window.innerHeight * .46;
+    let active = serviceScenes.find((scene) => {
       const rect = scene.getBoundingClientRect();
-      const nextDistance = Math.abs((rect.top + rect.height / 2) - center);
-      if (nextDistance < distance) { distance = nextDistance; active = scene; }
+      return rect.top <= focusLine && rect.bottom >= focusLine;
     });
+
+    if (!active) {
+      active = serviceScenes.reduce((closest, scene) => {
+        const rect = scene.getBoundingClientRect();
+        const distance = Math.abs((rect.top + rect.height / 2) - focusLine);
+        return distance < closest.distance ? { scene, distance } : closest;
+      }, { scene: serviceScenes[0], distance: Infinity }).scene;
+    }
+
+    if (active === activeScene) return;
+    activeScene = active;
     serviceScenes.forEach((scene) => scene.classList.toggle("is-visible", scene === active));
-    if (stickyCopy && active) stickyCopy.innerHTML = active.querySelector(".service-scene__copy").innerHTML;
+
+    if (stickyCopy) {
+      stickyCopy.classList.add("is-changing");
+      window.setTimeout(() => {
+        stickyCopy.innerHTML = active.querySelector(".service-scene__copy").innerHTML;
+        stickyCopy.classList.remove("is-changing");
+      }, 140);
+    }
   };
-  updateServiceScene();
-  window.addEventListener("scroll", updateServiceScene, { passive: true });
-  window.addEventListener("resize", updateServiceScene);
+
+  const requestServiceUpdate = () => {
+    if (!ticking) {
+      ticking = true;
+      window.requestAnimationFrame(renderServiceScene);
+    }
+  };
+
+  renderServiceScene();
+  window.addEventListener("scroll", requestServiceUpdate, { passive: true });
+  window.addEventListener("resize", requestServiceUpdate);
 }
