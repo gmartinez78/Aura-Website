@@ -202,7 +202,7 @@ a.chip:hover { border-color: var(--aura-grape); color: var(--aura-grape); }
   z-index: 2;
   position: relative;
   min-height: 100%;
-  overflow: hidden;
+  overflow: visible;
   border-radius: 32px;
   pointer-events: none;
 }
