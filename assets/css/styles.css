@@ -209,6 +209,27 @@ a.chip:hover { border-color: var(--aura-grape); color: var(--aura-grape); }
   text-shadow: 0 2px 4px rgba(15,3,24,.6), 0 8px 16px rgba(0,0,0,.5), 0 24px 48px rgba(0,0,0,.65), 0 40px 80px rgba(0,0,0,.35);
 }
 .hero--campaign .hero__headline-layer h1 span:last-child { margin-left: .6em; }
+.hero--campaign .hero__headline-layer h1 span {
+  transition: color .35s ease, filter .35s ease, background-position .7s ease;
+}
+.hero--campaign .hero__headline-layer h1:hover span {
+  color: transparent;
+  background-color: #f4f2ed;
+  background-image:
+    radial-gradient(circle, rgba(20,20,20,.8) 0 1px, transparent 1.4px),
+    radial-gradient(circle, rgba(255,255,255,.9) 0 1px, transparent 1.5px);
+  background-size: 8px 8px, 13px 13px;
+  background-position: 0 0, 18px 7px;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: grayscale(1) contrast(1.25);
+  animation: hero-type-dissolve 1.2s steps(5, end) forwards;
+}
+@keyframes hero-type-dissolve {
+  0% { background-position: 0 0, 18px 7px; }
+  100% { background-position: 30px -10px, -16px 22px; }
+}
 .hero--campaign .hero__team-layer {
   z-index: 2;
   position: relative;
