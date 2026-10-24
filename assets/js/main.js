@@ -86,7 +86,12 @@ if (serviceScenes.length) {
 
     if (active === activeScene) return;
     activeScene = active;
-    serviceScenes.forEach((scene) => scene.classList.toggle("is-visible", scene === active));
+    const activeIndex = serviceScenes.indexOf(active);
+    serviceScenes.forEach((scene, index) => {
+      scene.classList.toggle("is-visible", index === activeIndex);
+      scene.classList.toggle("is-before", index < activeIndex);
+      scene.classList.toggle("is-after", index > activeIndex);
+    });
 
     if (stickyCopy) {
       stickyCopy.classList.add("is-changing");
