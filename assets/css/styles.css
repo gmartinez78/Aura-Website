@@ -500,7 +500,7 @@ a.chip:hover { border-color: var(--aura-grape); color: var(--aura-grape); }
 .service-scene.is-visible { opacity: 1; }
 .service-scene__copy { display: flex; flex-direction: column; align-items: flex-start; gap: 14px; }
 .service-scene__number { color: #a98aff; font-size: .8rem; letter-spacing: .14em; }
-.service-scene h3 { width: 100%; padding-bottom: 14px; border-bottom: 1px solid rgba(169,138,255,.45); color: #fff; font-family: var(--font-display); font-size: clamp(2rem, 5vw, 4rem); line-height: .96; }
+.service-scene h3 { width: 100%; padding-bottom: 14px; border-bottom: 1px solid rgba(169,138,255,.45); color: #fff; font-family: var(--font-display); font-size: clamp(1.5rem, 3vw, 2.8rem); line-height: 1; }
 .service-scene p { max-width: 430px; color: rgba(255,255,255,.72); font-size: 1rem; line-height: 1.55; }
 .service-scene a { color: #a98aff; font-weight: 700; text-decoration: none; }
 .service-scene__visual { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; align-items: start; }
@@ -513,7 +513,7 @@ a.chip:hover { border-color: var(--aura-grape); color: var(--aura-grape); }
   .services-scroll { position: relative; display: grid; grid-template-columns: minmax(260px, .72fr) minmax(0, 1.28fr); column-gap: 64px; align-items: start; }
   .services-story__copy { position: sticky; top: 34vh; z-index: 3; display: flex; flex-direction: column; align-items: flex-start; gap: 14px; grid-column: 1; margin-top: 34vh; transition: opacity .14s ease, transform .14s ease; }
   .services-story__copy.is-changing { opacity: 0; transform: translateY(36px); }
-  .services-story__copy h3 { width: 100%; padding-bottom: 14px; border-bottom: 1px solid rgba(169,138,255,.45); color: #fff; font-family: var(--font-display); font-size: clamp(2rem, 5vw, 4rem); line-height: .96; }
+  .services-story__copy h3 { width: 100%; padding-bottom: 14px; border-bottom: 1px solid rgba(169,138,255,.45); color: #fff; font-family: var(--font-display); font-size: clamp(1.5rem, 3vw, 2.8rem); line-height: 1; }
   .services-story__copy p { max-width: 430px; color: rgba(255,255,255,.72); font-size: 1rem; line-height: 1.55; }
   .services-story__copy a { color: #a98aff; font-weight: 700; text-decoration: none; }
   .services-scenes-track { grid-column: 2; display: flex; flex-direction: column; }
