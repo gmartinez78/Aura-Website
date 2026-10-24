@@ -200,6 +200,8 @@ a.chip:hover { border-color: var(--aura-grape); color: var(--aura-grape); }
   display: flex;
   flex-direction: column;
   margin: 0;
+  pointer-events: auto;
+  cursor: crosshair;
   color: #e8fb36;
   font-size: clamp(3.25rem, 10.3vw, 9.75rem);
   font-weight: 700;
@@ -223,7 +225,7 @@ a.chip:hover { border-color: var(--aura-grape); color: var(--aura-grape); }
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  filter: grayscale(1) contrast(1.25);
+  filter: grayscale(1) contrast(1.6);
   animation: hero-type-dissolve 1.2s steps(5, end) forwards;
 }
 @keyframes hero-type-dissolve {
