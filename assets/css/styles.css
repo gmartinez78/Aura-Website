@@ -76,7 +76,7 @@ a.chip:hover { border-color: var(--aura-grape); color: var(--aura-grape); }
 .site-header { position: absolute; inset: 0 0 auto; z-index: 50; background: transparent; }
 .site-header__inner {
   display: flex; align-items: center; justify-content: space-between;
-  width: calc(100% - 32px); max-width: 720px;
+  width: min(920px, calc(100% - 28px));
   min-height: 52px; margin-top: 16px; padding-block: 5px; padding-inline: 18px;
   border: 1px solid rgba(255,255,255,.7); border-radius: 999px;
   background: rgba(255,255,255,.84); backdrop-filter: blur(16px);
@@ -121,7 +121,7 @@ a.chip:hover { border-color: var(--aura-grape); color: var(--aura-grape); }
 }
 
 /* ---------- Hero de campaña en capas ---------- */
-.hero--campaign { padding-block: var(--space-4) var(--space-10); }
+.hero--campaign { padding-block: 16px var(--space-10); }
 .hero--campaign .hero__grid {
   position: relative;
   display: grid;
