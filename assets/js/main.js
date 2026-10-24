@@ -63,17 +63,19 @@ document.querySelectorAll(".hero__headline-layer h1 span").forEach((word) => {
 const serviceScenes = document.querySelectorAll(".service-scene");
 if (serviceScenes.length && "IntersectionObserver" in window) {
   const stickyCopy = document.querySelector(".services-story__copy");
-  const serviceObserver = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      entry.target.classList.toggle("is-visible", entry.isIntersecting);
-      if (entry.isIntersecting && stickyCopy) {
-        const source = entry.target.querySelector(".service-scene__copy");
-        stickyCopy.innerHTML = source.innerHTML;
-      }
+  const updateServiceScene = () => {
+    const center = window.innerHeight * .5;
+    let active = serviceScenes[0];
+    let distance = Infinity;
+    serviceScenes.forEach((scene) => {
+      const rect = scene.getBoundingClientRect();
+      const nextDistance = Math.abs((rect.top + rect.height / 2) - center);
+      if (nextDistance < distance) { distance = nextDistance; active = scene; }
     });
-  }, { threshold: 0.35 });
-  serviceScenes.forEach((scene, index) => {
-    if (index === 0) scene.classList.add("is-visible");
-    serviceObserver.observe(scene);
-  });
+    serviceScenes.forEach((scene) => scene.classList.toggle("is-visible", scene === active));
+    if (stickyCopy && active) stickyCopy.innerHTML = active.querySelector(".service-scene__copy").innerHTML;
+  };
+  updateServiceScene();
+  window.addEventListener("scroll", updateServiceScene, { passive: true });
+  window.addEventListener("resize", updateServiceScene);
 }
