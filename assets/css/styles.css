@@ -250,8 +250,8 @@ a.chip:hover { border-color: var(--aura-grape); color: var(--aura-grape); }
   .hero--campaign .hero__grid {
     grid-template-columns: 1fr;
     gap: 0;
-    min-height: min(640px, calc(100svh - 105px));
-    max-height: 800px;
+    min-height: min(500px, calc(100svh - 105px));
+    max-height: 500px;
   }
   .hero--campaign .hero__headline-layer { padding-top: clamp(40px, 4vw, 72px); }
   .hero--campaign .hero__team-layer img { bottom: -9%; width: min(88%, 1220px); }
