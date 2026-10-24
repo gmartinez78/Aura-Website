@@ -409,19 +409,15 @@ a.chip:hover { border-color: var(--aura-grape); color: var(--aura-grape); }
 }
 
 /* ---------- Agentes: dashboard visual ---------- */
-.section--ink:has(.agents-visual) { overflow: hidden; background: radial-gradient(circle at 18% 42%, rgba(155,132,255,.32), transparent 34%), radial-gradient(circle at 82% 72%, rgba(65,214,215,.16), transparent 30%), #eef0ff; color: var(--aura-ink); }
-.section--ink:has(.agents-visual) .agents__head p { color: rgba(30,27,75,.72); }
-.agents-visual { position: relative; margin-bottom: var(--space-6); border-radius: 0; overflow: visible; background: transparent; box-shadow: none; }
-.agents-visual img { display: block; width: 100%; height: auto; mix-blend-mode: multiply; }
-.section--ink:has(.agents-visual) .agent-card { background: rgba(255,255,255,.7); border-color: rgba(78,42,128,.14); box-shadow: 0 12px 24px rgba(30,27,75,.08); }
-.section--ink:has(.agents-visual) .agent-card p { color: rgba(30,27,75,.72); }
-.section--ink:has(.agents-visual) .metrics { background: rgba(255,255,255,.78); box-shadow: 0 14px 30px rgba(30,27,75,.1); }
+.section--ink:has(.agent-grid) { overflow: hidden; color: #fff; background-color: #17181b; background-image: radial-gradient(rgba(255,255,255,.12) 1.5px, transparent 1.5px); background-size: 28px 28px; }
+.section--ink:has(.agent-grid) .agents__head p { color: rgba(255,255,255,.78); }
+.section--ink:has(.agent-grid) .agent-card { padding: var(--space-4) 0; background: transparent; border: 0; border-radius: 0; }
+.section--ink:has(.agent-grid) .agent-card p { color: rgba(255,255,255,.78); }
+.section--ink:has(.agent-grid) .agent-card__conversation,
+.section--ink:has(.agent-grid) .agent-mini-report { opacity: .9; }
 @media (min-width: 900px) {
-  .section--ink:has(.agents-visual) .container { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.12fr); grid-template-areas: "head cards" "visual cards"; gap: var(--space-6) var(--space-10); align-items: start; }
-  .section--ink:has(.agents-visual) .agents-visual { grid-area: visual; margin: 0; align-self: start; }
-  .section--ink:has(.agents-visual) .agents__head { grid-area: head; display: block; }
-  .section--ink:has(.agents-visual) .agents__head p { max-width: 520px; margin-top: var(--space-4); }
-  .section--ink:has(.agents-visual) .agent-grid { grid-area: cards; grid-template-columns: repeat(2, minmax(0,1fr)); }
+  .section--ink:has(.agent-grid) .agents__head { display: flex; flex-direction: row; justify-content: space-between; align-items: flex-end; }
+  .section--ink:has(.agent-grid) .agent-grid { grid-template-columns: repeat(3, minmax(0,1fr)); gap: var(--space-10); }
 }
 
 /* ---------- Servicios ---------- */
