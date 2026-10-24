@@ -623,11 +623,15 @@ a.chip:hover { border-color: var(--aura-grape); color: var(--aura-grape); }
 .site-footer ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; }
 .site-footer a { color: var(--aura-muted); text-decoration: none; }
 .site-footer a:hover { color: var(--aura-grape); }
-.site-footer__legal { margin-top: var(--space-8); padding-top: var(--space-5); border-top: 1px solid var(--aura-sand); }
+.site-footer__legal { display: flex; justify-content: space-between; gap: 24px; margin-top: var(--space-8); padding-top: var(--space-5); border-top: 1px solid var(--aura-sand); font-size: .75rem; }
+.site-footer__legal-links, .site-footer__social { display: flex; flex-wrap: wrap; align-items: center; gap: 24px; }
+.site-footer__social { justify-content: flex-end; }
+.site-footer__social strong { color: var(--aura-ink); font-weight: 700; }
 @media (min-width: 900px) {
   .site-footer { padding-bottom: var(--space-10); }
   .site-footer__grid { grid-template-columns: 1.4fr repeat(3, minmax(0, 1fr)); }
   .site-footer__brand { grid-column: auto; }
+  .site-footer__legal { align-items: center; }
 }
 
 /* ---------- Barra fija WhatsApp (móvil) ---------- */
