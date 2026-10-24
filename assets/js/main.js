@@ -33,6 +33,11 @@ if (casesSlider) {
   document.querySelector("[data-cases-next]")?.addEventListener("click", () => showCase(caseIndex + 1));
 }
 
+const deviceTrack = document.querySelector(".resources-device-slider__track");
+if (deviceTrack) {
+  deviceTrack.insertAdjacentHTML("beforeend", deviceTrack.innerHTML);
+}
+
 // 2. Menú móvil accesible.
 const toggle = document.querySelector(".nav__toggle");
 const menu = document.getElementById("nav-menu");
