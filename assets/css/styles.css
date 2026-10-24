@@ -247,7 +247,12 @@ a.chip:hover { border-color: var(--aura-grape); color: var(--aura-grape); }
 }
 @media (min-width: 1024px) {
   .hero--campaign { padding-block: var(--space-6) var(--space-12); }
-  .hero--campaign .hero__grid { grid-template-columns: 1fr; gap: 0; min-height: min(770px, calc(100svh - 105px)); }
+  .hero--campaign .hero__grid {
+    grid-template-columns: 1fr;
+    gap: 0;
+    min-height: min(640px, calc(100svh - 105px));
+    max-height: 800px;
+  }
   .hero--campaign .hero__headline-layer { padding-top: clamp(40px, 4vw, 72px); }
   .hero--campaign .hero__team-layer img { bottom: -9%; width: min(88%, 1220px); }
   .hero--campaign .hero__copy { padding-bottom: 32px; }
