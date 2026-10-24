@@ -73,8 +73,14 @@ a.chip:hover { border-color: var(--aura-grape); color: var(--aura-grape); }
 .section--ink .status::before { background: var(--aura-online); }
 
 /* ---------- Header ---------- */
-.site-header { position: sticky; top: 0; z-index: 50; background: rgba(250,246,241,.92); backdrop-filter: blur(10px); border-bottom: 1px solid var(--aura-sand); }
-.site-header__inner { display: flex; align-items: center; justify-content: space-between; min-height: 72px; }
+.site-header { position: absolute; inset: 0 0 auto; z-index: 50; background: transparent; }
+.site-header__inner {
+  display: flex; align-items: center; justify-content: space-between;
+  min-height: 58px; margin-top: 18px; padding-block: 7px; padding-inline: 20px;
+  border: 1px solid rgba(255,255,255,.7); border-radius: 999px;
+  background: rgba(255,255,255,.84); backdrop-filter: blur(16px);
+  box-shadow: 0 10px 30px rgba(10, 2, 20, .18);
+}
 .logo { font-family: var(--font-display); font-size: 1.75rem; font-weight: 700; letter-spacing: -0.02em; color: var(--aura-ink); text-decoration: none; }
 .logo img { height: 32px; width: auto; }
 .nav__toggle { display: inline-flex; align-items: center; justify-content: center; width: var(--tap-min); height: var(--tap-min); border-radius: var(--radius-sm); border: 1px solid var(--aura-sand); background: var(--aura-surface); color: var(--aura-ink); cursor: pointer; }
@@ -119,9 +125,9 @@ a.chip:hover { border-color: var(--aura-grape); color: var(--aura-grape); }
   position: relative;
   display: grid;
   grid-template-areas: "stage";
-  height: 500px;
-  min-height: 500px;
-  max-height: 500px;
+  height: 620px;
+  min-height: 620px;
+  max-height: 620px;
   align-items: stretch;
   isolation: isolate;
 }
@@ -252,9 +258,9 @@ a.chip:hover { border-color: var(--aura-grape); color: var(--aura-grape); }
   .hero--campaign .hero__grid {
     grid-template-columns: 1fr;
     gap: 0;
-    height: 500px;
-    min-height: 500px;
-    max-height: 500px;
+    height: 720px;
+    min-height: 720px;
+    max-height: 720px;
   }
   .hero--campaign .hero__headline-layer { padding-top: clamp(40px, 4vw, 72px); }
   .hero--campaign .hero__team-layer img { bottom: -9%; width: min(88%, 1220px); }
