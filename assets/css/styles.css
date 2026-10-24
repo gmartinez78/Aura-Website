@@ -589,7 +589,7 @@ a.chip:hover { border-color: var(--aura-grape); color: var(--aura-grape); }
 @media (min-width: 900px) { .inquiry-layout { grid-template-columns: .9fr 1.1fr; align-items: center; gap: var(--space-16); } .inquiry-form { padding: 42px; } .inquiry-form__row { grid-template-columns: repeat(2,1fr); } }
 
 .faq-layout { display: grid; gap: var(--space-8); }
-.faq-section { background: #fff; }
+.faq-section { margin-top: 32px; padding-top: 64px; background: #fff; }
 .faq-intro { max-width: 430px; margin-top: 22px; color: var(--aura-muted); font-size: 1.05rem; line-height: 1.55; }
 .faq { display: flex; flex-direction: column; }
 .faq details { border-top: 1px solid var(--aura-sand); background: transparent; }
