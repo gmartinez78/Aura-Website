@@ -362,6 +362,8 @@ a.chip:hover { border-color: var(--aura-grape); color: var(--aura-grape); }
 @media (min-width: 900px) {
   .client-showcase { grid-template-columns: repeat(6, minmax(0, 1fr)); grid-template-rows: repeat(2, minmax(0, 1fr)); grid-template-areas: "one two phone phone five six" "three four phone phone seven eight"; column-gap: 18px; row-gap: 2px; align-items: center; }
   .showcase-placeholder { width: 100%; }
+  .showcase-placeholder--one, .showcase-placeholder--two, .showcase-placeholder--five, .showcase-placeholder--six { transform: translateY(34px); }
+  .showcase-placeholder--three, .showcase-placeholder--four, .showcase-placeholder--seven, .showcase-placeholder--eight { transform: translateY(-34px); }
   .showcase-phone { width: min(100%, 310px); }
 }
 
