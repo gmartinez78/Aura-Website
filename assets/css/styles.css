@@ -360,7 +360,7 @@ a.chip:hover { border-color: var(--aura-grape); color: var(--aura-grape); }
 .showcase-phone__speaker { position: absolute; z-index: 2; top: 15px; left: 50%; width: 28%; height: 18px; transform: translateX(-50%); border-radius: 0 0 12px 12px; background: #05060a; }
 .showcase-phone__screen { display: block; width: 100%; height: auto; border-radius: 31px; box-shadow: inset 0 0 0 1px rgba(255,255,255,.16); }
 @media (min-width: 900px) {
-  .client-showcase { grid-template-columns: repeat(6, minmax(0, 1fr)); grid-template-rows: repeat(2, minmax(0, 1fr)); grid-template-areas: "one two phone phone five six" "three four phone phone seven eight"; column-gap: 18px; row-gap: 8px; align-items: center; }
+  .client-showcase { grid-template-columns: repeat(6, minmax(0, 1fr)); grid-template-rows: repeat(2, minmax(0, 1fr)); grid-template-areas: "one two phone phone five six" "three four phone phone seven eight"; column-gap: 18px; row-gap: 2px; align-items: center; }
   .showcase-placeholder { width: 100%; }
   .showcase-phone { width: min(100%, 310px); }
 }
