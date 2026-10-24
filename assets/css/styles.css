@@ -352,21 +352,16 @@ a.chip:hover { border-color: var(--aura-grape); color: var(--aura-grape); }
 @media (min-width: 768px) { .logos { grid-template-columns: repeat(5, minmax(0, 1fr)); gap: var(--space-4); } .logos li:nth-child(5) { display: flex; } }
 
 /* ---------- Muestras de clientes ---------- */
-.client-showcase { display: grid; align-items: start; gap: var(--space-5); grid-auto-flow: column; grid-auto-columns: minmax(270px, 82%); overflow-x: auto; scroll-snap-type: x mandatory; padding: 2px 2px var(--space-3); }
-.showcase-card { display: flex; flex-direction: column; align-items: flex-start; gap: var(--space-3); color: var(--aura-ink); text-decoration: none; scroll-snap-align: start; }
-.showcase-card__image { width: 100%; aspect-ratio: 4 / 5; display: block; object-fit: contain; filter: drop-shadow(0 18px 18px rgba(30, 27, 75, .12)); transition: transform .45s ease, filter .45s ease; }
-.showcase-card__shade { display: none; }
-.showcase-card__content { display: flex; flex-direction: column; align-items: flex-start; gap: 6px; padding: 0 var(--space-2); }
-.showcase-card__eyebrow { color: var(--aura-grape); font-size: .7rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; }
-.showcase-card__title { font-family: var(--font-display); font-size: clamp(1.25rem, 1.05rem + .85vw, 1.625rem); font-weight: 600; line-height: 1.05; text-wrap: balance; }
-.showcase-card__action { margin-top: 4px; color: var(--aura-grape); font-size: .8125rem; font-weight: 700; }
-.showcase-card__action span { display: inline-block; margin-left: 2px; font-size: 1.1em; transition: transform .2s ease; }
-.showcase-card:hover .showcase-card__image { filter: drop-shadow(0 24px 24px rgba(30, 27, 75, .18)); transform: translateY(-5px) scale(1.02); }
-.showcase-card:hover .showcase-card__action span { transform: translate(2px, -2px); }
-.showcase-card:focus-visible { outline: var(--focus-ring); outline-offset: 4px; }
-@media (min-width: 700px) { .client-showcase { grid-auto-columns: minmax(260px, 46%); } }
-@media (min-width: 900px) { .client-showcase { grid-auto-flow: row; grid-template-columns: repeat(3, minmax(0, 1fr)); overflow: visible; } }
-@media (prefers-reduced-motion: reduce) { .showcase-card__image, .showcase-card__action span { transition: none; } }
+.client-showcase { display: grid; grid-template-columns: repeat(2, 1fr); grid-template-areas: "one two" "three four" "phone phone" "five six" "seven eight"; gap: 12px; align-items: center; }
+.showcase-placeholder { min-height: 112px; padding: 14px; border: 1px solid rgba(30,27,75,.16); border-radius: 18px; background: linear-gradient(145deg, #f7f5f0, #e9e6df); color: rgba(30,27,75,.72); font-size: .78rem; font-weight: 700; box-shadow: 0 12px 20px rgba(30,27,75,.09); }
+.showcase-placeholder--one { grid-area: one; } .showcase-placeholder--two { grid-area: two; } .showcase-placeholder--three { grid-area: three; } .showcase-placeholder--four { grid-area: four; } .showcase-placeholder--five { grid-area: five; } .showcase-placeholder--six { grid-area: six; } .showcase-placeholder--seven { grid-area: seven; } .showcase-placeholder--eight { grid-area: eight; }
+.showcase-phone { grid-area: phone; justify-self: center; width: min(68%, 260px); padding: 9px; border-radius: 34px; background: #10111a; box-shadow: 0 28px 40px rgba(14,12,35,.28), 0 8px 12px rgba(14,12,35,.2); transform: rotate(-1deg); }
+.showcase-phone::before { content: ""; display: block; width: 32%; height: 18px; margin: -1px auto 5px; border-radius: 0 0 12px 12px; background: #10111a; position: relative; z-index: 1; }
+.showcase-phone__screen { min-height: 360px; padding: 20px 12px 12px; border-radius: 26px; overflow: hidden; background: #080c12; color: #f4f5f7; font-size: .52rem; box-shadow: inset 0 0 0 1px rgba(255,255,255,.12); }
+.phone-profile__top { display: flex; justify-content: space-between; margin-bottom: 16px; font-size: .72rem; font-weight: 700; } .phone-profile__top span { color: #168cff; }
+.phone-profile__avatar { display: grid; place-items: center; width: 54px; height: 54px; margin-bottom: 10px; border: 3px solid #233b68; border-radius: 50%; background: #071c3d; color: #fff; font-size: 1.7rem; font-weight: 800; }
+.showcase-phone__screen strong { display: block; font-size: .62rem; } .phone-profile__stats { display: flex; justify-content: space-between; margin: 12px 0; color: #cbd0d9; } .phone-profile__stats span { display: flex; flex-direction: column; } .phone-profile__stats b { color: #fff; font-size: .78rem; } .phone-profile__buttons { display: grid; grid-template-columns: repeat(3,1fr); gap: 4px; margin: 12px 0; } .phone-profile__buttons span { padding: 6px 2px; border-radius: 6px; background: #28303b; text-align: center; font-weight: 700; } .phone-profile__buttons span:first-child { background: #4561f5; } .phone-profile__grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 2px; margin: 16px -12px -12px; } .phone-profile__grid i { display: block; aspect-ratio: 1; background: linear-gradient(145deg, #164b88, #1e9fd0); } .phone-profile__grid i:nth-child(2n) { background: linear-gradient(145deg, #242b75, #0b9bd5); } .phone-profile__grid i:nth-child(3n) { background: linear-gradient(145deg, #0d1c55, #2876d1); }
+@media (min-width: 900px) { .client-showcase { grid-template-columns: repeat(4, minmax(0, 1fr)); grid-template-areas: "one two three four" "five phone phone six" "seven phone phone eight"; gap: 18px; } .showcase-placeholder { min-height: 150px; } .showcase-phone { width: min(100%, 290px); } }
 
 /* ---------- Agentes ---------- */
 .agents__head { display: flex; flex-direction: column; gap: var(--space-4); margin-bottom: var(--space-10); }
