@@ -21,6 +21,17 @@ document.querySelectorAll("[data-wa]").forEach((link) => {
   link.rel = "noopener";
 });
 
+const casesSlider = document.querySelector(".cases");
+if (casesSlider) {
+  const caseStep = () => casesSlider.querySelector(".case-card")?.getBoundingClientRect().width + 24 || 0;
+  document.querySelector("[data-cases-prev]")?.addEventListener("click", () => {
+    casesSlider.scrollBy({ left: -caseStep(), behavior: "smooth" });
+  });
+  document.querySelector("[data-cases-next]")?.addEventListener("click", () => {
+    casesSlider.scrollBy({ left: caseStep(), behavior: "smooth" });
+  });
+}
+
 // 2. Menú móvil accesible.
 const toggle = document.querySelector(".nav__toggle");
 const menu = document.getElementById("nav-menu");
