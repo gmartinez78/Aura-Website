@@ -421,6 +421,7 @@ a.chip:hover { border-color: var(--aura-grape); color: var(--aura-grape); }
 .agents-compatible__list { display: flex; flex-wrap: wrap; align-items: center; gap: 14px 28px; }
 .agent-tool { display: inline-flex; align-items: center; gap: 9px; color: #24183c; font-size: 1.05rem; font-weight: 600; white-space: nowrap; }
 .agent-tool__icon { display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; border: 2px solid rgba(36,24,60,.48); border-radius: 10px; font-size: 1.2rem; }
+.agent-tool__icon img { width: 22px; height: 22px; object-fit: contain; }
 @media (min-width: 900px) {
   .section--ink:has(.agent-grid) .agents__head { display: flex; flex-direction: row; justify-content: space-between; align-items: flex-end; }
   .section--ink:has(.agent-grid) .agent-grid { grid-template-columns: repeat(3, minmax(0,1fr)); gap: var(--space-10); }
