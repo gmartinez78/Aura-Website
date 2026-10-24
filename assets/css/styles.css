@@ -212,9 +212,17 @@ a.chip:hover { border-color: var(--aura-grape); color: var(--aura-grape); }
 }
 .hero--campaign .hero__headline-layer h1 span:last-child { margin-left: .6em; }
 .hero--campaign .hero__headline-layer h1 span {
+  display: block;
   transition: color .35s ease, filter .35s ease, background-position .7s ease;
 }
-.hero--campaign .hero__headline-layer h1:hover span {
+.hero--campaign .hero__headline-layer h1:hover,
+.hero--campaign .hero__headline-layer h1:focus-visible,
+.hero--campaign .hero__headline-layer:hover h1 span,
+.hero--campaign .hero__headline-layer h1:focus-visible span {
+  text-shadow: none;
+}
+.hero--campaign .hero__headline-layer h1:hover span,
+.hero--campaign .hero__headline-layer h1:focus-visible span {
   color: transparent;
   background-color: #f4f2ed;
   background-image:
@@ -226,6 +234,7 @@ a.chip:hover { border-color: var(--aura-grape); color: var(--aura-grape); }
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   filter: grayscale(1) contrast(1.6);
+  transform: translateX(12px);
   animation: hero-type-dissolve 1.2s steps(5, end) forwards;
 }
 @keyframes hero-type-dissolve {
