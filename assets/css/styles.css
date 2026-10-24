@@ -346,6 +346,8 @@ a.chip:hover { border-color: var(--aura-grape); color: var(--aura-grape); }
 .logos .logo-card--relinda img { max-height: 44px; filter: grayscale(1) brightness(.68); opacity: .72; }
 .logos li:nth-child(2) { background: transparent; border: 0; }
 .logos li:nth-child(2) img { filter: grayscale(1) brightness(.28); opacity: .82; }
+.logos .logo-card--xiabi { background: transparent; border: 0; overflow: hidden; }
+.logos .logo-card--xiabi img { max-height: 44px; max-width: 120px; object-fit: contain; filter: none; opacity: .82; }
 .logos img { max-height: 32px; width: auto; filter: grayscale(1); opacity: .8; }
 .industries { display: flex; flex-wrap: wrap; gap: 10px; }
 .logos li:nth-child(n+5) { display: none; }
