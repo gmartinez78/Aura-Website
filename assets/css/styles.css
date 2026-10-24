@@ -130,7 +130,7 @@ a.chip:hover { border-color: var(--aura-grape); color: var(--aura-grape); }
 }
 
 /* ---------- Hero de campaña en capas ---------- */
-.hero--campaign { padding-block: 16px var(--space-10); }
+.hero--campaign { position: relative; padding-block: 16px var(--space-10); }
 .hero--campaign .hero__grid {
   position: relative;
   display: grid;
@@ -147,10 +147,14 @@ a.chip:hover { border-color: var(--aura-grape); color: var(--aura-grape); }
 .hero--campaign .hero__copy { grid-area: stage; }
 .hero--campaign .hero__backdrop {
   z-index: 0;
-  position: relative;
+  position: absolute;
+  inset: 0;
+  left: 50%;
+  width: 100vw;
+  transform: translateX(-50%);
   min-height: 100%;
   overflow: hidden;
-  border-radius: 32px;
+  border-radius: 0;
   background:
     radial-gradient(circle at 50% 12%, rgba(181, 98, 255, .48), transparent 34%),
     radial-gradient(circle at 20% 90%, rgba(249, 255, 54, .16), transparent 28%),
