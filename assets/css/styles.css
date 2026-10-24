@@ -30,6 +30,7 @@ a:hover { color: var(--aura-grape-hover); }
 .section--ink { background: var(--aura-ink); color: #fff; }
 .section__head { display: flex; flex-direction: column; gap: var(--space-3); max-width: 720px; margin-bottom: var(--space-10); }
 .section__head--centered { align-items: center; margin-inline: auto; text-align: center; }
+.system-intro { max-width: 680px; font-family: var(--font-body); font-size: 1.1rem; line-height: 1.5; font-weight: 400; letter-spacing: 0; }
 .highlight-underline { position: relative; display: inline-block; z-index: 0; }
 .highlight-underline::after { content: ""; position: absolute; z-index: -1; left: -.08em; right: -.08em; bottom: .08em; height: .22em; background: var(--aura-yellow, #f4d35e); border-radius: 999px; transform: rotate(-1deg); }
 .section__head--split { max-width: none; }
