@@ -495,6 +495,19 @@ a.chip:hover { border-color: var(--aura-grape); color: var(--aura-grape); }
   .plan-row { flex-direction: row; justify-content: space-between; align-items: center; }
 }
 
+/* ---------- Recursos seleccionados ---------- */
+.resources-section { overflow: hidden; background: var(--aura-ink); color: #fff; }
+.resources-layout { display: grid; gap: var(--space-10); align-items: center; }
+.resources-copy { display: flex; flex-direction: column; align-items: flex-start; gap: 16px; }
+.resources-copy h2 { max-width: 560px; color: #fff; font-size: clamp(2.5rem, 5vw, 5.4rem); line-height: .95; }
+.resources-copy p { max-width: 480px; color: rgba(255,255,255,.72); font-size: 1.05rem; line-height: 1.55; }
+.resources-orbit { position: relative; min-height: 440px; border-radius: 50%; background: radial-gradient(circle, rgba(145,111,255,.35), rgba(30,27,75,0) 62%); }
+.resources-orbit::before, .resources-orbit::after { content: ""; position: absolute; inset: 12%; border: 1px solid rgba(169,138,255,.28); border-radius: 50%; transform: rotate(24deg) scaleX(1.35); } .resources-orbit::after { inset: 24%; transform: rotate(-28deg) scaleX(1.25); }
+.resource-chip { position: absolute; z-index: 2; display: inline-flex; padding: 12px 18px; border: 1px solid rgba(255,255,255,.24); border-radius: 999px; background: rgba(255,255,255,.1); backdrop-filter: blur(10px); color: #fff; font-size: .8rem; font-weight: 700; box-shadow: 0 10px 24px rgba(0,0,0,.18); }
+.resource-chip--one { top: 14%; left: 8%; } .resource-chip--two { top: 8%; right: 10%; } .resource-chip--three { top: 43%; left: 2%; } .resource-chip--four { top: 48%; right: 0; } .resource-chip--five { bottom: 14%; left: 12%; } .resource-chip--six { bottom: 7%; right: 12%; } .resource-chip--seven { top: 25%; left: 37%; background: rgba(169,138,255,.3); }
+.resources-orbit__core { position: absolute; top: 50%; left: 50%; z-index: 3; display: grid; place-items: center; width: 130px; height: 130px; transform: translate(-50%,-50%); border-radius: 50%; background: linear-gradient(145deg, #bda8ff, #6547c9); color: #fff; text-align: center; font-family: var(--font-display); font-size: 1.1rem; font-weight: 700; box-shadow: 0 0 60px rgba(169,138,255,.45); } .resources-orbit__core small { font-family: var(--font-body); font-size: .6rem; font-weight: 500; opacity: .82; }
+@media (min-width: 900px) { .resources-layout { grid-template-columns: .85fr 1.15fr; gap: var(--space-16); } .resources-orbit { min-height: 560px; } }
+
 /* ---------- FAQ ---------- */
 .faq-layout { display: grid; gap: var(--space-8); }
 .faq-intro { max-width: 430px; margin-top: 22px; color: var(--aura-muted); font-size: 1.05rem; line-height: 1.55; }
