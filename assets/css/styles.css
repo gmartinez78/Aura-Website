@@ -491,7 +491,7 @@ a.chip:hover { border-color: var(--aura-grape); color: var(--aura-grape); }
 #servicios .eyebrow { color: #a98aff; } #servicios h2 { color: #fff; }
 .services-scroll { display: flex; flex-direction: column; gap: 0; }
 .services-story__copy { display: none; }
-.service-scene { display: grid; gap: 28px; min-height: 100vh; padding-block: 8vh; align-items: center; scroll-snap-align: start; opacity: .24; transition: opacity .7s ease; }
+.service-scene { display: grid; gap: 28px; min-height: 118vh; padding-block: 8vh; align-items: center; scroll-snap-align: start; opacity: .24; transition: opacity .7s ease; }
 .service-scene.is-visible { opacity: 1; }
 .service-scene__copy { display: flex; flex-direction: column; align-items: flex-start; gap: 14px; }
 .service-scene__number { color: #a98aff; font-size: .8rem; letter-spacing: .14em; }
@@ -507,14 +507,14 @@ a.chip:hover { border-color: var(--aura-grape); color: var(--aura-grape); }
 @media (min-width: 700px) {
   .services-scroll { position: relative; display: grid; grid-template-columns: minmax(260px, .72fr) minmax(0, 1.28fr); column-gap: 64px; align-items: start; }
   .services-story__copy { position: sticky; top: 34vh; z-index: 3; display: flex; flex-direction: column; align-items: flex-start; gap: 14px; grid-column: 1; margin-top: 34vh; transition: opacity .14s ease, transform .14s ease; }
-  .services-story__copy.is-changing { opacity: 0; transform: translateY(18px); }
+  .services-story__copy.is-changing { opacity: 0; transform: translateY(36px); }
   .services-story__copy h3 { width: 100%; padding-bottom: 14px; border-bottom: 1px solid rgba(169,138,255,.45); color: #fff; font-family: var(--font-display); font-size: clamp(2rem, 5vw, 4rem); line-height: .96; }
   .services-story__copy p { max-width: 430px; color: rgba(255,255,255,.72); font-size: 1rem; line-height: 1.55; }
   .services-story__copy a { color: #a98aff; font-weight: 700; text-decoration: none; }
   .services-scenes-track { grid-column: 2; display: flex; flex-direction: column; }
-  .service-scene { grid-template-columns: 1fr; min-height: 100vh; gap: 0; }
+  .service-scene { grid-template-columns: 1fr; min-height: 118vh; gap: 0; }
   .service-scene__copy { display: none; }
-  .service-scene__visual { align-self: center; }
+  .service-scene__visual { position: sticky; top: 14vh; align-self: start; height: 72vh; }
   .service-scene__visual img { height: 560px; }
   .service-scene__visual img:nth-child(2) { margin-top: 150px; }
 }
