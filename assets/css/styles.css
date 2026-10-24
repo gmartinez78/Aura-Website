@@ -411,6 +411,9 @@ a.chip:hover { border-color: var(--aura-grape); color: var(--aura-grape); }
 /* ---------- Agentes: dashboard visual ---------- */
 .section--ink:has(.agent-grid) { overflow: hidden; color: #24183c; background-color: #eee8ff; background-image: radial-gradient(rgba(83,58,126,.12) 1.5px, transparent 1.5px); background-size: 28px 28px; }
 .section--ink:has(.agent-grid) .agents__head p { color: rgba(36,24,60,.72); }
+.section--ink:has(.agent-grid) .eyebrow,
+.section--ink:has(.agent-grid) .status { color: var(--aura-grape); }
+.section--ink:has(.agent-grid) .status::before { background: var(--aura-grape); }
 .section--ink:has(.agent-grid) .agent-card { padding: var(--space-4) 0; background: transparent; border: 0; border-radius: 0; }
 .section--ink:has(.agent-grid) .agent-card p { color: rgba(36,24,60,.72); }
 .agents-compatible { margin-bottom: var(--space-10); }
