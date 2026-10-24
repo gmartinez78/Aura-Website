@@ -73,7 +73,9 @@ a.chip:hover { border-color: var(--aura-grape); color: var(--aura-grape); }
 .section--ink .status::before { background: var(--aura-online); }
 
 /* ---------- Header ---------- */
-.site-header { position: absolute; inset: 0 0 auto; z-index: 50; background: transparent; }
+.site-header { position: absolute; inset: 0 0 auto; z-index: 50; background: transparent; transition: background .25s ease; }
+.site-header.is-sticky { position: fixed; top: 0; bottom: auto; width: 100%; padding-top: 10px; background: rgba(250, 248, 246, .72); backdrop-filter: blur(12px); }
+.site-header.is-sticky .site-header__inner { margin-top: 0; }
 .site-header__inner {
   display: flex; align-items: center; justify-content: space-between;
   width: min(920px, calc(100% - 28px));

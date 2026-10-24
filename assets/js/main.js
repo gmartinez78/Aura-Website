@@ -4,6 +4,16 @@
 //    Todos los enlaces con data-wa="mensaje" se convierten en wa.me con el texto prellenado.
 const AURA_WHATSAPP = "18092179323";
 
+// Keep the floating header visible once the page moves past the hero.
+const siteHeader = document.querySelector(".site-header");
+if (siteHeader) {
+  const updateStickyHeader = () => {
+    siteHeader.classList.toggle("is-sticky", window.scrollY > 80);
+  };
+  updateStickyHeader();
+  window.addEventListener("scroll", updateStickyHeader, { passive: true });
+}
+
 document.querySelectorAll("[data-wa]").forEach((link) => {
   const text = link.getAttribute("data-wa") || "Hola Aura, quiero más información.";
   link.href = `https://wa.me/${AURA_WHATSAPP}?text=${encodeURIComponent(text)}`;
