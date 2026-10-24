@@ -83,7 +83,7 @@ a.chip:hover { border-color: var(--aura-grape); color: var(--aura-grape); }
   backdrop-filter: blur(16px);
   box-shadow: 0 10px 30px rgba(10, 2, 20, .18);
 }
-.logo { font-family: var(--font-display); font-size: 1.75rem; font-weight: 700; letter-spacing: -0.02em; color: var(--aura-ink); text-decoration: none; transform: translateY(3px); }
+.logo { font-family: var(--font-display); font-size: 1.75rem; font-weight: 700; letter-spacing: -0.02em; color: var(--aura-ink); text-decoration: none; transform: none; }
 .logo img { height: 32px; width: auto; }
 .nav__toggle { display: inline-flex; align-items: center; justify-content: center; width: var(--tap-min); height: var(--tap-min); border-radius: var(--radius-sm); border: 1px solid var(--aura-sand); background: var(--aura-surface); color: var(--aura-ink); cursor: pointer; }
 .nav__toggle svg { width: 22px; height: 22px; }
