@@ -409,12 +409,10 @@ a.chip:hover { border-color: var(--aura-grape); color: var(--aura-grape); }
 }
 
 /* ---------- Agentes: dashboard visual ---------- */
-.section--ink:has(.agent-grid) { overflow: hidden; color: #fff; background-color: #17181b; background-image: radial-gradient(rgba(255,255,255,.12) 1.5px, transparent 1.5px); background-size: 28px 28px; }
-.section--ink:has(.agent-grid) .agents__head p { color: rgba(255,255,255,.78); }
+.section--ink:has(.agent-grid) { overflow: hidden; color: #24183c; background-color: #eee8ff; background-image: radial-gradient(rgba(83,58,126,.12) 1.5px, transparent 1.5px); background-size: 28px 28px; }
+.section--ink:has(.agent-grid) .agents__head p { color: rgba(36,24,60,.72); }
 .section--ink:has(.agent-grid) .agent-card { padding: var(--space-4) 0; background: transparent; border: 0; border-radius: 0; }
-.section--ink:has(.agent-grid) .agent-card p { color: rgba(255,255,255,.78); }
-.section--ink:has(.agent-grid) .agent-card__conversation,
-.section--ink:has(.agent-grid) .agent-mini-report { opacity: .9; }
+.section--ink:has(.agent-grid) .agent-card p { color: rgba(36,24,60,.72); }
 @media (min-width: 900px) {
   .section--ink:has(.agent-grid) .agents__head { display: flex; flex-direction: row; justify-content: space-between; align-items: flex-end; }
   .section--ink:has(.agent-grid) .agent-grid { grid-template-columns: repeat(3, minmax(0,1fr)); gap: var(--space-10); }
