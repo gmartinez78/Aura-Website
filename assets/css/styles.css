@@ -524,6 +524,22 @@ a.chip:hover { border-color: var(--aura-grape); color: var(--aura-grape); }
 @media (min-width: 900px) { .resources-layout { grid-template-columns: .85fr 1.15fr; gap: var(--space-16); } .resources-orbit { min-height: 560px; } }
 
 /* ---------- FAQ ---------- */
+.inquiry-section { background: #fff; }
+.inquiry-layout { display: grid; gap: var(--space-10); }
+.inquiry-copy { display: flex; flex-direction: column; align-items: flex-start; gap: 18px; }
+.inquiry-copy h2 { max-width: 560px; font-size: clamp(2.7rem, 5vw, 5.2rem); line-height: .95; }
+.inquiry-copy h2 em { font-family: var(--font-display); font-weight: 400; }
+.inquiry-copy ul { display: flex; flex-direction: column; gap: 12px; margin: 10px 0; padding: 0; list-style: none; color: var(--aura-muted); }
+.inquiry-copy li::before { content: "✓"; display: inline-grid; place-items: center; width: 20px; height: 20px; margin-right: 10px; border: 1px solid var(--aura-grape); border-radius: 50%; color: var(--aura-grape); font-size: .75rem; }
+.inquiry-direct { color: var(--aura-grape); font-weight: 700; text-decoration: none; }
+.inquiry-form { display: flex; flex-direction: column; gap: 20px; padding: 26px; border-radius: 24px; background: #fff; border: 1px solid var(--aura-sand); box-shadow: 0 16px 35px rgba(30,27,75,.08); }
+.inquiry-form label, .inquiry-form legend { display: flex; flex-direction: column; gap: 8px; color: var(--aura-ink); font-weight: 700; }
+.inquiry-form input, .inquiry-form textarea { width: 100%; border: 0; border-bottom: 1px solid var(--aura-sand-strong); border-radius: 0; padding: 10px 0; background: transparent; color: var(--aura-ink); font: inherit; outline: none; }
+.inquiry-form input:focus, .inquiry-form textarea:focus { border-color: var(--aura-grape); }
+.inquiry-form__row { display: grid; gap: 18px; }
+.inquiry-form fieldset { border: 0; margin: 0; padding: 0; } .budget-options { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px; } .budget-options label { position: relative; } .budget-options input { position: absolute; opacity: 0; } .budget-options span { padding: 12px 14px; border: 1px solid var(--aura-sand-strong); border-radius: 10px; color: var(--aura-muted); font-size: .84rem; font-weight: 500; cursor: pointer; } .budget-options input:checked + span { border-color: var(--aura-grape); background: var(--aura-lilac); color: var(--aura-grape-deep); }
+@media (min-width: 900px) { .inquiry-layout { grid-template-columns: .9fr 1.1fr; align-items: center; gap: var(--space-16); } .inquiry-form { padding: 42px; } .inquiry-form__row { grid-template-columns: repeat(2,1fr); } }
+
 .faq-layout { display: grid; gap: var(--space-8); }
 .faq-intro { max-width: 430px; margin-top: 22px; color: var(--aura-muted); font-size: 1.05rem; line-height: 1.55; }
 .faq { display: flex; flex-direction: column; }
