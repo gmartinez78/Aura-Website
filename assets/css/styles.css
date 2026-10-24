@@ -199,7 +199,10 @@ a.chip:hover { border-color: var(--aura-grape); color: var(--aura-grape); }
 }
 .hero--campaign .hero__headline-layer h1 {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: baseline;
+  justify-content: center;
   margin: 0;
   pointer-events: auto;
   cursor: crosshair;
@@ -211,9 +214,10 @@ a.chip:hover { border-color: var(--aura-grape); color: var(--aura-grape); }
   text-transform: uppercase;
   text-shadow: 0 2px 4px rgba(15,3,24,.6), 0 8px 16px rgba(0,0,0,.5), 0 24px 48px rgba(0,0,0,.65), 0 40px 80px rgba(0,0,0,.35);
 }
-.hero--campaign .hero__headline-layer h1 span:last-child { margin-left: .6em; }
-.hero--campaign .hero__headline-layer h1 span {
-  display: block;
+.hero--campaign .hero__headline-layer h1 > span:last-child { margin-left: .6em; }
+.hero--campaign .hero__headline-layer h1 > span {
+  display: inline-block;
+  white-space: nowrap;
 }
 .hero--campaign .hero-letter {
   display: inline-block;
