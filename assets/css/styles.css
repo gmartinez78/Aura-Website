@@ -384,8 +384,8 @@ a.chip:hover { border-color: var(--aura-grape); color: var(--aura-grape); }
 .agents__head p { color: rgba(255,255,255,.8); max-width: 400px; }
 .agent-grid { display: grid; gap: var(--space-4); margin-bottom: var(--space-5); }
 .agent-card { display: flex; flex-direction: column; gap: var(--space-3); padding: var(--space-6); border-radius: var(--radius-lg); background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.12); }
-.agent-card h3 { font-size: clamp(1.1875rem, 1.1rem + .3vw, 1.375rem); }
-.agent-card p { font-size: .875rem; color: rgba(255,255,255,.8); }
+.agent-card h3 { font-size: clamp(1.45rem, 1.25rem + .55vw, 1.85rem); line-height: 1.08; }
+.agent-card p { font-size: 1rem; line-height: 1.55; color: rgba(255,255,255,.8); }
 .agent-card__today { margin-top: 4px; padding: 10px 12px; border-radius: 10px; background: rgba(255,255,255,.08); font-size: .8125rem; }
 .agent-mini-report { display: grid; grid-template-columns: 1.25fr repeat(3, 1fr); height: 36px; margin-top: 4px; overflow: hidden; border: 1px solid rgba(255,255,255,.18); border-radius: 8px; background: rgba(255,255,255,.06); font-size: .6rem; line-height: 1; }
 .agent-mini-report span { display: flex; align-items: center; min-width: 0; padding: 3px 5px; border-right: 1px solid rgba(255,255,255,.14); }
