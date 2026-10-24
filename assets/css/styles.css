@@ -608,6 +608,8 @@ a.chip:hover { border-color: var(--aura-grape); color: var(--aura-grape); }
 .cta-final::before { content: ""; position: absolute; left: 50%; top: -120px; width: 460px; height: 360px; transform: translateX(-50%); border-radius: 50%; background: radial-gradient(circle, rgba(109,63,168,.55) 0%, rgba(30,27,75,0) 70%); }
 .cta-final > * { position: relative; }
 .cta-final h2 { max-width: 760px; }
+.cta-final .btn--peach { background: #e8fb36; color: #1c0930; }
+.cta-final .btn--peach:hover { background: #fff; color: #1c0930; }
 .cta-final p { color: rgba(255,255,255,.8); max-width: 560px; }
 .cta-final__buttons { display: flex; flex-direction: column; gap: var(--space-3); width: 100%; }
 @media (min-width: 640px) { .cta-final__buttons { flex-direction: row; justify-content: center; width: auto; } }
