@@ -1,86 +1,363 @@
 <!doctype html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Aura Agency — sistemas de crecimiento que convierten atención en ingresos." />
-    <title>Aura — Performance & Growth</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="logo.css" />
-  </head>
-  <body>
-    <div class="page-glow glow-one"></div><div class="page-glow glow-two"></div>
-    <header class="site-header">
-      <a class="brand" href="#inicio" aria-label="Aura, inicio"><img src="aura-logo-original.png" alt="Aura" /></a>
-      <nav class="nav" aria-label="Navegación principal">
-        <a href="#sistema">El sistema</a><a href="#servicios">Servicios</a><a href="#planes">Planes</a>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aura Agency | Marketing digital con IA en República Dominicana</title>
+  <meta name="description" content="Más clientes cada mes con estrategas reales y agentes de IA 24/7. Meta Ads, Google Ads, páginas web y automatización por WhatsApp para negocios dominicanos. Planes desde RD$15,000/mes.">
+  <meta name="theme-color" content="#FAF6F1">
+  <link rel="canonical" href="https://auragency.net/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_DO">
+  <meta property="og:title" content="Aura Agency | Marketing digital con IA en RD">
+  <meta property="og:description" content="Estrategas reales + agentes de IA que atienden a tus clientes por WhatsApp 24/7.">
+  <meta property="og:url" content="https://auragency.net/">
+  <!-- TODO: añadir imagen OG 1200x630 en assets/img/og-aura.jpg -->
+  <meta property="og:image" content="https://auragency.net/assets/img/og-aura.jpg">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/tokens.css">
+  <link rel="stylesheet" href="assets/css/styles.css?v=campaign-layered-hero-v4">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Aura Agency",
+    "url": "https://auragency.net/",
+    "email": "ana@auragency.net",
+    "telephone": "+1-809-217-9323",
+    "areaServed": "DO",
+    "description": "Agencia de marketing digital con IA en República Dominicana: Meta Ads, Google Ads, páginas web y automatización por WhatsApp."
+  }
+  </script>
+</head>
+<body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-wa" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21l1.8-5A8.5 8.5 0 1 1 8 19.3L3 21z"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+  </svg>
+
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="logo" href="./" aria-label="Aura, inicio">
+        <!-- TODO: reemplazar por el logo en versión oscura: <img src="assets/img/logo-aura.svg" alt="Aura"> -->
+        Aura
+      </a>
+      <nav aria-label="Principal">
+        <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Abrir menú">
+          <svg aria-hidden="true"><use href="#i-menu"/></svg>
+        </button>
+        <div class="nav__menu" id="nav-menu">
+          <a href="#servicios">Servicios</a>
+          <a href="#industrias">Industrias</a>
+          <a href="#casos">Casos</a>
+          <a href="precios.html">Precios</a>
+          <a href="/blog">Blog</a>
+          <a class="btn btn--ink" href="https://wa.me/18092179323" data-wa="Hola Aura, quiero hablar sobre mi negocio.">Escríbenos</a>
+        </div>
       </nav>
-      <a class="button button-small" href="#contacto">Hablemos <span>↗</span></a>
-      <button class="menu-button" aria-label="Abrir menú">☰</button>
-    </header>
+    </div>
+  </header>
 
-    <main>
-      <section class="hero" id="inicio">
-        <div class="eyebrow"><i></i> Performance marketing · República Dominicana</div>
-        <h1>El próximo nivel de<br /><em>tu negocio</em> empieza aquí.</h1>
-        <p class="hero-copy">Construimos sistemas de crecimiento que transforman la atención en demanda y la demanda en ventas predecibles.</p>
-        <div class="hero-actions"><a class="button" href="#contacto">Agenda un diagnóstico <span>↗</span></a><a class="text-link" href="#sistema">Descubre cómo funciona <b>↓</b></a></div>
-        <div class="hero-bottom">
-          <div class="trust"><div class="avatars"><span>AM</span><span>JL</span><span>CR</span></div><p>Equipos ambiciosos ya crecen con Aura</p></div>
-          <div class="hero-note">Scroll para explorar <span>↓</span></div>
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero hero--campaign">
+      <div class="container hero__grid">
+        <div class="hero__backdrop" aria-hidden="true"></div>
+        <div class="hero__headline-layer">
+          <h1><span>Crecimiento</span><span>en modo ON.</span></h1>
         </div>
-        <div class="hero-graphic" aria-hidden="true">
-          <div class="signal-field"><span></span><span></span><span></span><span></span><span></span></div>
-          <div class="signal-stamp">AURA<br /><i>GROWTH<br />SIGNAL</i></div>
-          <div class="growth-track"><svg viewBox="0 0 440 300" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 254C56 248 74 204 113 209C149 213 152 161 194 172C243 185 238 99 294 111C343 122 341 43 433 20"/><path class="track-shadow" d="M3 282C56 276 74 232 113 237C149 241 152 189 194 200C243 213 238 127 294 139C343 150 341 71 433 48"/></svg><b class="track-point point-one"></b><b class="track-point point-two"></b><b class="track-point point-three"></b></div>
-          <div class="aura-disc"><span>A</span><i>01</i><em>ACTIVATE<br />MOMENTUM</em></div>
-          <div class="metric-card metric-top"><small>ROAS promedio</small><strong>+312<span>%</span></strong><div class="mini-bars"><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
-          <div class="metric-card metric-side"><small>Pipeline activo</small><strong>4.2x</strong><span class="green">↗ en 90 días</span></div>
-          <div class="signal-chip"><span></span> SISTEMA EN MARCHA</div>
+        <div class="hero__team-layer" aria-hidden="true">
+          <img src="assets/img/aura-hero-team-layer.png" alt="">
         </div>
-      </section>
-
-      <section class="marquee"><div>ESTRATEGIA <b>✦</b> PERFORMANCE <b>✦</b> AUTOMATIZACIÓN <b>✦</b> CONVERSIÓN <b>✦</b> ESTRATEGIA <b>✦</b> PERFORMANCE <b>✦</b></div></section>
-
-      <section class="system section" id="sistema">
-        <div class="section-intro"><p class="section-label">01 — EL SISTEMA AURA</p><h2>Menos ruido.<br /><em>Más resultados.</em></h2><p>Una metodología integrada para dejar de perseguir oportunidades y empezar a crear un flujo constante de clientes.</p></div>
-        <div class="steps">
-          <article class="step"><span class="step-number">01</span><div class="step-icon">⌁</div><h3>Atraemos</h3><p>Conectamos tu oferta con las personas correctas a través de campañas, contenido y posicionamiento.</p><span class="step-tag">Tráfico cualificado</span></article>
-          <article class="step"><span class="step-number">02</span><div class="step-icon">◒</div><h3>Convertimos</h3><p>Diseñamos experiencias digitales que generan confianza, captan datos y mueven a la acción.</p><span class="step-tag">Embudos de venta</span></article>
-          <article class="step"><span class="step-number">03</span><div class="step-icon">✳</div><h3>Escalamos</h3><p>Automatizamos los procesos clave para que cada nuevo lead tenga seguimiento, sin fricción.</p><span class="step-tag">Sistemas inteligentes</span></article>
+        <div class="hero__copy">
+          <p class="lead">Estrategia, creatividad e IA para convertir el interés de tus clientes en ventas, incluso mientras duermes.</p>
+          <div class="hero__ctas">
+            <a class="btn btn--primary" href="https://wa.me/18092179323" data-wa="Hola Aura, quiero más clientes para mi negocio.">
+              <svg aria-hidden="true"><use href="#i-wa"/></svg>Hablemos por WhatsApp
+            </a>
+            <a class="btn btn--outline" href="precios.html">Ver planes</a>
+          </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="services section" id="servicios">
-        <div class="services-heading"><p class="section-label">02 — CAPACIDADES</p><h2>Todo lo que tu marca necesita<br /><em>para avanzar.</em></h2></div>
-        <div class="service-grid">
-          <a class="service featured" href="#contacto"><span>01</span><div><h3>Paid Media</h3><p>Campañas que combinan creatividad, datos y una obsesión saludable por el retorno.</p></div><b>↗</b><div class="service-art"><div></div><i></i><em></em></div></a>
-          <a class="service" href="#contacto"><span>02</span><div><h3>Web & Funnels</h3><p>Experiencias que convierten visitas en conversaciones y clientes.</p></div><b>↗</b></a>
-          <a class="service" href="#contacto"><span>03</span><div><h3>SEO & Content</h3><p>Presencia orgánica para que te encuentren cuando importa.</p></div><b>↗</b></a>
-          <a class="service dark" href="#contacto"><span>04</span><div><h3>AI & Automation</h3><p>Menos tareas repetitivas. Más tiempo para crecer.</p></div><b>↗</b></a>
+    <!-- PRUEBA SOCIAL + INDUSTRIAS -->
+    <section class="container proof" id="industrias" aria-labelledby="proof-title">
+      <h2 class="proof__label" id="proof-title">Negocios que ya crecen con Aura</h2>
+      <!-- TODO: logos reales aprobados por cada cliente (SVG o PNG, 32 px de alto) -->
+      <ul class="logos">
+        <li><span class="placeholder">[Logo cliente]</span></li>
+        <li><span class="placeholder">[Logo cliente]</span></li>
+        <li><span class="placeholder">[Logo cliente]</span></li>
+        <li><span class="placeholder">[Logo cliente]</span></li>
+        <li><span class="placeholder">[Logo cliente]</span></li>
+      </ul>
+    </section>
+
+    <!-- SISTEMA AURA -->
+    <section class="section section--white" aria-labelledby="sistema-title">
+      <div class="container">
+        <div class="section__head section__head--centered">
+          <span class="eyebrow">El sistema Aura</span>
+          <h2 id="sistema-title">No publicamos por publicar. Construimos un sistema que vende.</h2>
         </div>
-      </section>
+        <div class="client-showcase" aria-label="Muestras de trabajo de clientes">
+          <a class="showcase-card" href="https://www.instagram.com/gestionitrd?stkn=ejkwYnk1Y2MwbXJw" target="_blank" rel="noopener noreferrer" aria-label="Ver Gestión IT RD en Instagram">
+            <img src="assets/img/case-gestion-it-rd.png" alt="Composición editorial de tecnología con un consultor sobre un teléfono" class="showcase-card__image">
+            <span class="showcase-card__shade" aria-hidden="true"></span>
+            <span class="showcase-card__content">
+              <span class="showcase-card__eyebrow">Gestión IT RD</span>
+              <span class="showcase-card__title">Tecnología que se entiende</span>
+              <span class="showcase-card__action">Ver en Instagram <span aria-hidden="true">↗</span></span>
+            </span>
+          </a>
 
-      <section class="proof section">
-        <p class="section-label">03 — IMPACTO REAL</p><div class="proof-layout"><h2>Hacemos que el<br />crecimiento se sienta<br /><em>inevitable.</em></h2><div class="proof-stat"><strong>87<span>%</span></strong><p>de nuestros partners logra una mejora medible en sus primeros 90 días.</p><a class="text-link" href="#contacto">Ver qué podemos hacer por ti <b>↗</b></a></div></div>
-        <div class="stat-row"><div><strong>+20M</strong><span>Impresiones generadas</span></div><div><strong>4.2x</strong><span>ROAS promedio</span></div><div><strong>24/7</strong><span>Leads atendidos</span></div><div><strong>+312%</strong><span>Crecimiento en ventas</span></div></div>
-      </section>
+          <a class="showcase-card" href="https://www.instagram.com/xiabitravels?stkn=MTZsa2V4a3J3dnljNQ==" target="_blank" rel="noopener noreferrer" aria-label="Ver Xiabi Travels en Instagram">
+            <img src="assets/img/case-xiabi-travels.png" alt="Composición editorial de viaje con una viajera saliendo de un teléfono" class="showcase-card__image">
+            <span class="showcase-card__shade" aria-hidden="true"></span>
+            <span class="showcase-card__content">
+              <span class="showcase-card__eyebrow">Xiabi Travels</span>
+              <span class="showcase-card__title">Viajes que dan ganas de salir</span>
+              <span class="showcase-card__action">Ver en Instagram <span aria-hidden="true">↗</span></span>
+            </span>
+          </a>
 
-      <section class="plans section" id="planes">
-        <div class="plans-intro"><p class="section-label">04 — INVERSIÓN</p><h2>Elige el impulso<br /><em>que necesitas.</em></h2><p>Planes flexibles para empresas listas para construir una ventaja de verdad.</p></div>
-        <div class="plan-grid">
-          <article class="plan"><p>STARTER</p><h3>Crecer con<br />claridad.</h3><strong>RD$15K<small>/ mes</small></strong><ul><li>Gestión de Meta Ads</li><li>Landing de captación</li><li>Optimización mensual</li><li>Reporte de rendimiento</li></ul><a href="#contacto" class="plan-link">Empezar ahora <span>↗</span></a></article>
-          <article class="plan plan-main"><div class="recommended">MÁS ELEGIDO</div><p>GROWTH</p><h3>Escalar con<br />confianza.</h3><strong>RD$25K<small>/ mes</small></strong><ul><li>Meta Ads + Google Search</li><li>Embudos & automatizaciones</li><li>Contenido para campañas</li><li>CRM & dashboard de ventas</li></ul><a href="#contacto" class="button plan-button">Hablemos de growth <span>↗</span></a></article>
-          <article class="plan"><p>SCALE</p><h3>Dominar tu<br />mercado.</h3><strong>RD$45K<small>/ mes</small></strong><ul><li>Todo lo incluido en Growth</li><li>Optimización diaria</li><li>SEO & ecosistema web</li><li>Automatizaciones avanzadas</li></ul><a href="#contacto" class="plan-link">Escalar ahora <span>↗</span></a></article>
-        </div><p class="fine-print">La inversión publicitaria se paga directamente a las plataformas.</p>
-      </section>
+          <a class="showcase-card" href="https://www.instagram.com/reel/DOO4pINjmbA/?stkn=dmE5MG1odzc5bDZl" target="_blank" rel="noopener noreferrer" aria-label="Ver reel de cliente en Instagram">
+            <img src="assets/img/case-social-reel.png" alt="Composición editorial de contenido para redes con una creadora y una cámara" class="showcase-card__image">
+            <span class="showcase-card__shade" aria-hidden="true"></span>
+            <span class="showcase-card__content">
+              <span class="showcase-card__eyebrow">Contenido social</span>
+              <span class="showcase-card__title">Reels que paran el scroll</span>
+              <span class="showcase-card__action">Ver reel <span aria-hidden="true">↗</span></span>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
 
-      <section class="cta" id="contacto"><div class="cta-star">✦</div><p class="section-label">¿LISTO PARA CRECER?</p><h2>Tu negocio merece<br />una estrategia que<br /><em>esté a su altura.</em></h2><a class="button button-light" href="https://wa.me/18092179323">Agenda tu diagnóstico <span>↗</span></a><p class="cta-note">15 minutos · Sin compromiso · 100% enfocado en tu negocio</p></section>
-    </main>
-    <footer><a class="brand" href="#inicio"><img src="aura-logo-original.png" alt="Aura" /></a><p>© 2026 Aura Agency<br />Santo Domingo, RD</p><div><a href="mailto:ana@auragency.net">ana@auragency.net</a><a href="https://www.instagram.com/">Instagram ↗</a></div></footer>
-    <script src="script.js"></script>
-  </body>
+    <!-- AGENTES -->
+    <section class="section section--ink" aria-labelledby="agentes-title">
+      <div class="container">
+        <div class="agents__head">
+          <div class="section__head" style="margin:0">
+            <span class="eyebrow">Agentes en acción</span>
+            <h2 id="agentes-title">Tu equipo trabaja de día. Nuestros agentes, todo el día.</h2>
+          </div>
+          <p>Cada agente hace un trabajo concreto. Nuestro equipo revisa y aprueba lo importante: tú mantienes el control.</p>
+        </div>
+        <div class="agent-grid">
+          <article class="agent-card">
+            <span class="status">Agente calificador</span>
+            <h3>Responde en WhatsApp en segundos</h3>
+            <p>Pregunta presupuesto, necesidad y fecha, y agenda la cita.</p>
+            <div class="agent-card__conversation" role="img" aria-label="Conversación de WhatsApp para solicitar una cita">
+              <span class="whatsapp-bubble whatsapp-bubble--incoming">Hola, quiero agendar una cita.</span>
+              <span class="whatsapp-bubble whatsapp-bubble--outgoing">¡Claro! ¿Qué día te funciona?</span>
+              <span class="whatsapp-bubble whatsapp-bubble--incoming whatsapp-bubble--short">El jueves en la tarde.</span>
+            </div>
+          </article>
+          <article class="agent-card">
+            <span class="status">Agente de seguimiento</span>
+            <h3>No deja ningún lead en visto</h3>
+            <p>Recuerda citas y reactiva a quien no respondió, por WhatsApp y email.</p>
+            <div class="agent-card__conversation agent-card__conversation--followup" role="img" aria-label="Mensaje de seguimiento por WhatsApp">
+              <span class="whatsapp-bubble whatsapp-bubble--outgoing">Hola, Ana. Vi que te interesaba la asesoría. ¿Te viene bien hablar este jueves?</span>
+            </div>
+          </article>
+          <article class="agent-card">
+            <span class="status">Agente de reportes</span>
+            <h3>Te dice qué funciona, en claro</h3>
+            <p>Resume leads, costo por lead y ventas en tu panel, sin jerga.</p>
+            <div class="agent-mini-report" role="img" aria-label="Esta semana: 24 leads, 9 citas y RD$210 por lead">
+              <span class="agent-mini-report__heading">Esta semana</span>
+              <span class="agent-mini-report__heading">Leads</span>
+              <span class="agent-mini-report__heading">Citas</span>
+              <span class="agent-mini-report__heading">Por lead</span>
+              <span class="agent-mini-report__value">Resumen</span>
+              <span class="agent-mini-report__value">24</span>
+              <span class="agent-mini-report__value">9</span>
+              <span class="agent-mini-report__value">RD$210</span>
+            </div>
+          </article>
+        </div>
+        <!-- TODO: métricas reales y anonimizadas de un cliente, con mes y fuente -->
+        <dl class="metrics" aria-label="Ejemplo de panel de resultados">
+          <div><dt>Leads este mes</dt><dd>86</dd></div>
+          <div><dt>Costo por lead</dt><dd>RD$210</dd></div>
+          <div><dt>Citas agendadas</dt><dd>28</dd></div>
+          <div><dt>Tiempo de respuesta</dt><dd>32 seg.</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section class="section" id="servicios" aria-labelledby="servicios-title">
+      <div class="container">
+        <div class="section__head">
+          <span class="eyebrow">Servicios</span>
+          <h2 id="servicios-title">Todo tu marketing digital, o solo la pieza que te falta.</h2>
+        </div>
+        <!-- TODO: enlazar cada tarjeta a su página de servicio cuando exista (servicios/*.html) -->
+        <ul class="services">
+          <li><a class="service-card" href="https://wa.me/18092179323" data-wa="Hola Aura, me interesa la gestión de Ads."><span><span class="service-card__title">Gestión de Ads</span><span class="service-card__desc">Meta y Google Ads enfocados en ventas, no en likes.</span></span><span class="service-card__more"><span class="label">Consultar</span><span class="arrow" aria-hidden="true">›</span></span></a></li>
+          <li><a class="service-card service-card--featured" href="https://wa.me/18092179323" data-wa="Hola Aura, me interesa la automatización con IA y WhatsApp."><span><span class="service-card__title">Automatización IA &amp; WhatsApp</span><span class="service-card__desc">Agentes que califican leads en WhatsApp y los pasan a tu CRM.</span></span><span class="service-card__more"><span class="label">Consultar</span><span class="arrow" aria-hidden="true">›</span></span></a></li>
+          <li><a class="service-card" href="https://wa.me/18092179323" data-wa="Hola Aura, necesito una página web."><span><span class="service-card__title">Páginas web</span><span class="service-card__desc">Landing pages, catálogos y webs corporativas hechas para captar leads.</span></span><span class="service-card__more"><span class="label">Consultar</span><span class="arrow" aria-hidden="true">›</span></span></a></li>
+          <li><a class="service-card" href="https://wa.me/18092179323" data-wa="Hola Aura, me interesa la gestión de redes sociales."><span><span class="service-card__title">Redes sociales</span><span class="service-card__desc">Dirección creativa, reels y community management con tu audiencia local.</span></span><span class="service-card__more"><span class="label">Consultar</span><span class="arrow" aria-hidden="true">›</span></span></a></li>
+          <li><a class="service-card" href="https://wa.me/18092179323" data-wa="Hola Aura, me interesa el SEO."><span><span class="service-card__title">SEO</span><span class="service-card__desc">Auditoría técnica, optimización y contenido para aparecer en Google.</span></span><span class="service-card__more"><span class="label">Consultar</span><span class="arrow" aria-hidden="true">›</span></span></a></li>
+          <li><a class="service-card" href="https://wa.me/18092179323" data-wa="Hola Aura, me interesa el email marketing."><span><span class="service-card__title">Email marketing</span><span class="service-card__desc">Secuencias automáticas que nutren prospectos y fidelizan clientes.</span></span><span class="service-card__more"><span class="label">Consultar</span><span class="arrow" aria-hidden="true">›</span></span></a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CASOS -->
+    <section class="section section--white" id="casos" aria-labelledby="casos-title">
+      <div class="container">
+        <div class="section__head section__head--split">
+          <div style="display:flex;flex-direction:column;gap:12px">
+            <span class="eyebrow">Casos reales</span>
+            <h2 id="casos-title">Resultados de negocios como el tuyo.</h2>
+          </div>
+        </div>
+        <!-- TODO: 3 casos reales con permiso del cliente. Cada cifra con periodo (ej. "en 60 días"). -->
+        <ul class="cases">
+          <li class="case-card">
+            <div class="case-card__media"><span class="placeholder">[Foto del cliente]</span></div>
+            <div class="case-card__body">
+              <span class="chip chip--lilac chip--small">Clínicas &amp; estéticas</span>
+              <h3 class="case-card__name">[Nombre del cliente]</h3>
+              <dl class="case-card__results"><div><dt>Antes</dt><dd>[dato]</dd></div><div><dt>Después</dt><dd>[dato]</dd></div></dl>
+              <p class="case-card__note">[Métrica, ej. citas al mes] en [N] días</p>
+            </div>
+          </li>
+          <li class="case-card">
+            <div class="case-card__media"><span class="placeholder">[Foto del cliente]</span></div>
+            <div class="case-card__body">
+              <span class="chip chip--lilac chip--small">Inmobiliarias</span>
+              <h3 class="case-card__name">[Nombre del cliente]</h3>
+              <dl class="case-card__results"><div><dt>Antes</dt><dd>[dato]</dd></div><div><dt>Después</dt><dd>[dato]</dd></div></dl>
+              <p class="case-card__note">[Métrica, ej. costo por lead] en [N] días</p>
+            </div>
+          </li>
+          <li class="case-card">
+            <div class="case-card__media"><span class="placeholder">[Foto del cliente]</span></div>
+            <div class="case-card__body">
+              <span class="chip chip--lilac chip--small">Comercio &amp; retail</span>
+              <h3 class="case-card__name">[Nombre del cliente]</h3>
+              <dl class="case-card__results"><div><dt>Antes</dt><dd>[dato]</dd></div><div><dt>Después</dt><dd>[dato]</dd></div></dl>
+              <p class="case-card__note">[Métrica, ej. ventas online] en [N] días</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- PLANES -->
+    <section class="section" aria-labelledby="planes-title">
+      <div class="container">
+        <div class="plans-band">
+          <div class="plans-band__copy">
+            <span class="eyebrow">Planes</span>
+            <h2 id="planes-title">Planes desde RD$15,000/mes</h2>
+            <p>Funcionamos como tu departamento de marketing externo. La inversión publicitaria se paga directo a Meta o Google.</p>
+            <a class="btn btn--primary" href="precios.html">Comparar planes</a>
+          </div>
+          <ul class="plan-rows">
+            <li class="plan-row"><span class="plan-row__name">Growth Starter</span><span class="plan-row__desc">Meta Ads + landing page</span></li>
+            <li class="plan-row plan-row--featured"><span class="plan-row__name">Growth Pro <span class="badge">Más elegido</span></span><span class="plan-row__desc">Meta + Google + CRM y panel</span></li>
+            <li class="plan-row"><span class="plan-row__name">Growth Scale</span><span class="plan-row__desc">Ecosistema completo + automatización</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" style="padding-top:0" aria-labelledby="faq-title">
+      <div class="container faq-layout">
+        <div class="section__head" style="margin:0">
+          <span class="eyebrow">Preguntas frecuentes</span>
+          <h2 id="faq-title">Lo que nos preguntan antes de empezar.</h2>
+        </div>
+        <div class="faq">
+          <details open>
+            <summary>¿La inversión en anuncios está incluida?</summary>
+            <p>No. Se paga directo a Meta o Google, así siempre ves en qué se gasta cada peso.</p>
+          </details>
+          <details>
+            <summary>¿Los agentes de IA reemplazan a mi equipo?</summary>
+            <p>[Respuesta pendiente de Aura]</p>
+          </details>
+          <details>
+            <summary>¿En cuánto tiempo veo resultados?</summary>
+            <p>[Respuesta pendiente de Aura]</p>
+          </details>
+          <details>
+            <summary>¿Hay contrato de permanencia?</summary>
+            <p>[Respuesta pendiente de Aura]</p>
+          </details>
+          <details>
+            <summary>¿Trabajan con negocios fuera de Santo Domingo?</summary>
+            <p>[Respuesta pendiente de Aura]</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="section" style="padding-top:0">
+      <div class="container">
+        <div class="cta-final">
+          <h2>Tu negocio tiene un techo. Te ayudamos a romperlo.</h2>
+          <p>Escríbenos por WhatsApp. Nuestro agente te responde al momento y un estratega te llama con un plan.</p>
+          <div class="cta-final__buttons">
+            <a class="btn btn--peach" href="https://wa.me/18092179323" data-wa="Hola Aura, quiero un plan para mi negocio.">
+              <svg aria-hidden="true"><use href="#i-wa"/></svg>Hablemos por WhatsApp
+            </a>
+            <!-- TODO: enlazar a Calendly u otra agenda para el diagnóstico -->
+            <a class="btn btn--outline-light" href="https://wa.me/18092179323" data-wa="Hola Aura, quiero agendar el diagnóstico gratis.">Agendar diagnóstico gratis</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__grid">
+        <div class="site-footer__brand">
+          <span class="logo">Aura</span>
+          <span>Marketing digital con IA para negocios dominicanos.</span>
+        </div>
+        <div>
+          <h2>Servicios</h2>
+          <ul><li><a href="#servicios">Gestión de Ads</a></li><li><a href="#servicios">Automatización IA</a></li><li><a href="#servicios">Páginas web</a></li></ul>
+        </div>
+        <div>
+          <h2>Empresa</h2>
+          <ul><li><a href="#casos">Casos</a></li><li><a href="precios.html">Precios</a></li><li><a href="/nosotros">Nosotros</a></li><li><a href="/blog">Blog</a></li></ul>
+        </div>
+        <div>
+          <h2>Contacto</h2>
+          <ul><li><a href="mailto:ana@auragency.net">ana@auragency.net</a></li><li><a href="tel:+18092179323">+1 809-217-9323</a></li><li>[Ciudad], República Dominicana</li></ul>
+        </div>
+      </div>
+      <p class="site-footer__legal">© <span data-year>2026</span> Aura Agency. Estrategias digitales orientadas a resultados para República Dominicana y el mundo.</p>
+    </div>
+  </footer>
+
+  <div class="wa-bar">
+    <span class="wa-bar__text">¿Hablamos? Respondemos al momento</span>
+    <a class="btn btn--peach" href="https://wa.me/18092179323" data-wa="Hola Aura, quiero más información.">
+      <svg aria-hidden="true"><use href="#i-wa"/></svg>WhatsApp
+    </a>
+  </div>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
 </html>

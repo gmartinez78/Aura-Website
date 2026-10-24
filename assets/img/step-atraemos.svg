@@ -1,0 +1,49 @@
+<svg viewBox="0 0 500 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Grid Background -->
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#e0e0e0" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="500" height="600" fill="#f9f9f9"/>
+  <rect width="500" height="600" fill="url(#grid)"/>
+
+  <!-- Border -->
+  <rect x="40" y="80" width="420" height="420" fill="none" stroke="#d0d0d0" stroke-width="2" rx="8"/>
+
+  <!-- Person Placeholder (Circle with simple face) -->
+  <circle cx="250" cy="290" r="80" fill="#e8d4f0" stroke="#c0a0d0" stroke-width="2"/>
+  <circle cx="230" cy="270" r="8" fill="#333"/>
+  <circle cx="270" cy="270" r="8" fill="#333"/>
+  <path d="M 240 300 Q 250 310 260 300" stroke="#333" stroke-width="2" fill="none"/>
+
+  <!-- Meta Ads Label (Top Left) -->
+  <g>
+    <line x1="150" y1="120" x2="120" y2="100" stroke="#666" stroke-width="2"/>
+    <rect x="80" y="75" width="90" height="35" fill="#1f2937" rx="6"/>
+    <text x="125" y="98" font-family="Arial" font-size="12" font-weight="bold" fill="#fff" text-anchor="middle">Meta Ads</text>
+  </g>
+
+  <!-- Google Search Label (Top Right) -->
+  <g>
+    <line x1="350" y1="120" x2="380" y2="100" stroke="#666" stroke-width="2"/>
+    <rect x="330" y="75" width="120" height="35" fill="#1f2937" rx="6"/>
+    <text x="390" y="98" font-family="Arial" font-size="12" font-weight="bold" fill="#fff" text-anchor="middle">Google Search</text>
+  </g>
+
+  <!-- SEO Label (Bottom Left) -->
+  <g>
+    <line x1="150" y1="460" x2="120" y2="500" stroke="#666" stroke-width="2"/>
+    <rect x="85" y="510" width="70" height="35" fill="#1f2937" rx="6"/>
+    <text x="120" y="533" font-family="Arial" font-size="12" font-weight="bold" fill="#fff" text-anchor="middle">SEO</text>
+  </g>
+
+  <!-- Targeting Label (Right Side) -->
+  <g>
+    <line x1="330" y1="290" x2="380" y2="290" stroke="#666" stroke-width="2"/>
+    <rect x="385" y="270" width="90" height="40" fill="#1f2937" rx="6"/>
+    <text x="430" y="292" font-family="Arial" font-size="11" font-weight="bold" fill="#fff" text-anchor="middle">Intención</text>
+    <text x="430" y="305" font-family="Arial" font-size="11" font-weight="bold" fill="#fff" text-anchor="middle">de Compra</text>
+  </g>
+</svg>

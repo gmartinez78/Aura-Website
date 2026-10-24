@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git init *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git commit *)",
+      "Bash(git commit -m 'Redesign sistema Aura section with annotated card layout *)",
+      "Bash(git commit -m 'Create annotated grid-based system cards with labeled elements *)"
+    ]
+  }
+}
