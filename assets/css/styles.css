@@ -344,6 +344,7 @@ a.chip:hover { border-color: var(--aura-grape); color: var(--aura-grape); }
 .logos li { display: flex; align-items: center; justify-content: center; height: 56px; border-radius: var(--radius-sm); border: 1px dashed var(--aura-sand-strong); }
 .logos .logo-card--relinda { background: transparent; border: 0; }
 .logos .logo-card--relinda img { max-height: 44px; filter: grayscale(1) brightness(.68); opacity: .72; }
+.logos li:nth-child(2) { background: transparent; border: 0; }
 .logos li:nth-child(2) img { filter: grayscale(1) brightness(.28); opacity: .82; }
 .logos img { max-height: 32px; width: auto; filter: grayscale(1); opacity: .8; }
 .industries { display: flex; flex-wrap: wrap; gap: 10px; }
