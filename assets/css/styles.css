@@ -96,7 +96,7 @@ a.chip:hover { border-color: var(--aura-grape); color: var(--aura-grape); }
   .nav__toggle { display: none; }
   .site-header__cta { display: inline-flex; position: absolute; top: 50%; right: 18px; transform: translateY(-50%); }
   .nav__menu, .nav__menu.is-open { display: flex; flex-direction: row; align-items: center; gap: var(--space-8); position: static; padding: 0; background: none; border: 0; box-shadow: none; font-size: 0.9375rem; }
-  .nav__menu, .nav__menu.is-open { position: absolute; top: 50%; left: 112px; transform: translateY(-50%); }
+  .nav__menu, .nav__menu.is-open { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
 }
 
 /* ---------- Hero ---------- */
