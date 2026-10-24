@@ -225,17 +225,7 @@ a.chip:hover { border-color: var(--aura-grape); color: var(--aura-grape); }
 }
 .hero--campaign .hero__headline-layer h1:hover,
 .hero--campaign .hero__headline-layer h1:focus-visible {
-  text-shadow: none;
-}
-.hero--campaign .hero__headline-layer h1:hover .hero-letter,
-.hero--campaign .hero__headline-layer h1:focus-visible .hero-letter {
-  animation: hero-letter-granulate .9s cubic-bezier(.2,.8,.2,1) both;
-  animation-delay: calc(var(--i) * 22ms);
-}
-@keyframes hero-letter-granulate {
-  0% { opacity: 1; transform: translate3d(0, 0, 0) rotate(0); filter: blur(0); }
-  45% { opacity: .7; transform: translate3d(calc(var(--x) * .45), calc(var(--y) * .45), 0) rotate(calc(var(--r) * .45)); filter: blur(.3px); }
-  100% { opacity: .1; transform: translate3d(var(--x), var(--y), 0) rotate(var(--r)); filter: blur(1.4px); }
+  text-shadow: 0 0 8px rgba(232,251,54,.95), 0 0 24px rgba(232,251,54,.72), 0 0 56px rgba(232,251,54,.42), 0 8px 24px rgba(0,0,0,.42);
 }
 .hero--campaign .hero__team-layer {
   z-index: 2;
