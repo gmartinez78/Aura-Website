@@ -213,33 +213,25 @@ a.chip:hover { border-color: var(--aura-grape); color: var(--aura-grape); }
 .hero--campaign .hero__headline-layer h1 span:last-child { margin-left: .6em; }
 .hero--campaign .hero__headline-layer h1 span {
   display: block;
-  transition: color .35s ease, filter .35s ease, background-position .7s ease;
+}
+.hero--campaign .hero-letter {
+  display: inline-block;
+  transition: transform .7s cubic-bezier(.2,.8,.2,1), opacity .45s ease, filter .45s ease;
+  will-change: transform, opacity;
 }
 .hero--campaign .hero__headline-layer h1:hover,
-.hero--campaign .hero__headline-layer h1:focus-visible,
-.hero--campaign .hero__headline-layer:hover h1 span,
-.hero--campaign .hero__headline-layer h1:focus-visible span {
+.hero--campaign .hero__headline-layer h1:focus-visible {
   text-shadow: none;
 }
-.hero--campaign .hero__headline-layer h1:hover span,
-.hero--campaign .hero__headline-layer h1:focus-visible span {
-  color: transparent;
-  background-color: #f4f2ed;
-  background-image:
-    radial-gradient(circle, rgba(20,20,20,.8) 0 1px, transparent 1.4px),
-    radial-gradient(circle, rgba(255,255,255,.9) 0 1px, transparent 1.5px);
-  background-size: 8px 8px, 13px 13px;
-  background-position: 0 0, 18px 7px;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  filter: grayscale(1) contrast(1.6);
-  transform: translateX(12px);
-  animation: hero-type-dissolve 1.2s steps(5, end) forwards;
+.hero--campaign .hero__headline-layer h1:hover .hero-letter,
+.hero--campaign .hero__headline-layer h1:focus-visible .hero-letter {
+  animation: hero-letter-granulate .9s cubic-bezier(.2,.8,.2,1) both;
+  animation-delay: calc(var(--i) * 22ms);
 }
-@keyframes hero-type-dissolve {
-  0% { background-position: 0 0, 18px 7px; }
-  100% { background-position: 30px -10px, -16px 22px; }
+@keyframes hero-letter-granulate {
+  0% { opacity: 1; transform: translate3d(0, 0, 0) rotate(0); filter: blur(0); }
+  45% { opacity: .7; transform: translate3d(calc(var(--x) * .45), calc(var(--y) * .45), 0) rotate(calc(var(--r) * .45)); filter: blur(.3px); }
+  100% { opacity: .1; transform: translate3d(var(--x), var(--y), 0) rotate(var(--r)); filter: blur(1.4px); }
 }
 .hero--campaign .hero__team-layer {
   z-index: 2;

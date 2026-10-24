@@ -42,3 +42,19 @@ if (toggle && menu) {
 document.querySelectorAll("[data-year]").forEach((el) => {
   el.textContent = new Date().getFullYear();
 });
+
+// 4. Hero headline: turn each character into a tiny particle on hover.
+document.querySelectorAll(".hero__headline-layer h1 span").forEach((word) => {
+  const text = word.textContent;
+  word.textContent = "";
+  [...text].forEach((character, index) => {
+    const particle = document.createElement("span");
+    particle.className = "hero-letter";
+    particle.textContent = character === " " ? "\u00a0" : character;
+    particle.style.setProperty("--i", index);
+    particle.style.setProperty("--x", `${(Math.random() * 70 - 35).toFixed(1)}px`);
+    particle.style.setProperty("--y", `${(Math.random() * 54 - 27).toFixed(1)}px`);
+    particle.style.setProperty("--r", `${(Math.random() * 36 - 18).toFixed(1)}deg`);
+    word.appendChild(particle);
+  });
+});
