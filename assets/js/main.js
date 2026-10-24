@@ -23,13 +23,14 @@ document.querySelectorAll("[data-wa]").forEach((link) => {
 
 const casesSlider = document.querySelector(".cases");
 if (casesSlider) {
-  const caseStep = () => casesSlider.querySelector(".case-card")?.getBoundingClientRect().width + 24 || 0;
-  document.querySelector("[data-cases-prev]")?.addEventListener("click", () => {
-    casesSlider.scrollBy({ left: -caseStep(), behavior: "smooth" });
-  });
-  document.querySelector("[data-cases-next]")?.addEventListener("click", () => {
-    casesSlider.scrollBy({ left: caseStep(), behavior: "smooth" });
-  });
+  const caseCards = [...casesSlider.querySelectorAll(".case-card")];
+  let caseIndex = 0;
+  const showCase = (index) => {
+    caseIndex = Math.max(0, Math.min(index, caseCards.length - 1));
+    caseCards[caseIndex]?.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "start" });
+  };
+  document.querySelector("[data-cases-prev]")?.addEventListener("click", () => showCase(caseIndex - 1));
+  document.querySelector("[data-cases-next]")?.addEventListener("click", () => showCase(caseIndex + 1));
 }
 
 // 2. Menú móvil accesible.
