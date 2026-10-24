@@ -77,7 +77,7 @@ a.chip:hover { border-color: var(--aura-grape); color: var(--aura-grape); }
 .site-header__inner {
   display: flex; align-items: center; justify-content: space-between;
   width: min(920px, calc(100% - 28px));
-  min-height: 52px; margin-top: 16px; padding-block: 5px; padding-inline: 18px;
+  position: relative; min-height: 52px; margin-top: 30px; padding-block: 5px; padding-inline: 18px;
   border: 1px solid rgba(255,255,255,.7); border-radius: 999px;
   background: rgba(255,255,255,.84); backdrop-filter: blur(16px);
   box-shadow: 0 10px 30px rgba(10, 2, 20, .18);
@@ -93,6 +93,7 @@ a.chip:hover { border-color: var(--aura-grape); color: var(--aura-grape); }
 @media (min-width: 900px) {
   .nav__toggle { display: none; }
   .nav__menu, .nav__menu.is-open { display: flex; flex-direction: row; align-items: center; gap: var(--space-8); position: static; padding: 0; background: none; border: 0; box-shadow: none; font-size: 0.9375rem; }
+  .nav__menu, .nav__menu.is-open { position: absolute; left: 50%; transform: translateX(-50%); }
 }
 
 /* ---------- Hero ---------- */
