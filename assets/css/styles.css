@@ -199,9 +199,8 @@ a.chip:hover { border-color: var(--aura-grape); color: var(--aura-grape); }
 }
 .hero--campaign .hero__headline-layer h1 {
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-items: baseline;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
   margin: 0;
   pointer-events: auto;
@@ -216,7 +215,7 @@ a.chip:hover { border-color: var(--aura-grape); color: var(--aura-grape); }
 }
 .hero--campaign .hero__headline-layer h1 > span:last-child { margin-left: .6em; }
 .hero--campaign .hero__headline-layer h1 > span {
-  display: inline-block;
+  display: block;
   white-space: nowrap;
 }
 .hero--campaign .hero-letter {
