@@ -129,7 +129,7 @@ a.chip:hover { border-color: var(--aura-grape); color: var(--aura-grape); }
 }
 
 /* ---------- Hero de campaña en capas ---------- */
-.hero--campaign { position: relative; padding-block: 16px var(--space-10); }
+.hero--campaign { position: relative; padding-block: 0 var(--space-10); }
 .hero--campaign .hero__grid {
   position: relative;
   display: grid;
