@@ -555,6 +555,12 @@ a.chip:hover { border-color: var(--aura-grape); color: var(--aura-grape); }
 .resources-table__images img:nth-child(2) { height: 410px; margin-top: -50px; border-radius: 30px; }
 .resources-table__images img:nth-child(3) { height: 370px; margin-top: 40px; }
 .resources-table__images img:nth-child(4) { height: 330px; margin-top: -22px; }
+.resources-device-slider { width: 100%; overflow: hidden; }
+.resources-device-slider__track { display: flex; align-items: center; gap: 22px; width: max-content; animation: resources-devices-right 42s linear infinite; will-change: transform; }
+.device-shot { flex: 0 0 auto; object-fit: cover; border-radius: 22px; box-shadow: 0 16px 30px rgba(30,27,75,.18); }
+.device-shot--ipad { width: 360px; height: 276px; }
+.device-shot--phone { width: 138px; height: 286px; }
+@keyframes resources-devices-right { from { transform: translateX(-50%); } to { transform: translateX(0); } }
 .resources-marquee--bottom .resources-marquee__track { animation-name: resources-marquee-right; }
 @keyframes resources-marquee-right { from { transform: translateX(-50%); } to { transform: translateX(0); } }
 @media (min-width: 900px) { .resources-table { padding-block: 56px; } }
