@@ -76,7 +76,8 @@ a.chip:hover { border-color: var(--aura-grape); color: var(--aura-grape); }
 .site-header { position: absolute; inset: 0 0 auto; z-index: 50; background: transparent; }
 .site-header__inner {
   display: flex; align-items: center; justify-content: space-between;
-  min-height: 58px; margin-top: 18px; padding-block: 7px; padding-inline: 20px;
+  width: calc(100% - 32px); max-width: 920px;
+  min-height: 52px; margin-top: 16px; padding-block: 5px; padding-inline: 18px;
   border: 1px solid rgba(255,255,255,.7); border-radius: 999px;
   background: rgba(255,255,255,.84); backdrop-filter: blur(16px);
   box-shadow: 0 10px 30px rgba(10, 2, 20, .18);
@@ -262,7 +263,7 @@ a.chip:hover { border-color: var(--aura-grape); color: var(--aura-grape); }
     min-height: 720px;
     max-height: 720px;
   }
-  .hero--campaign .hero__headline-layer { padding-top: clamp(40px, 4vw, 72px); }
+  .hero--campaign .hero__headline-layer { padding-top: clamp(108px, 10vw, 148px); }
   .hero--campaign .hero__team-layer img { bottom: -9%; width: min(88%, 1220px); }
   .hero--campaign .hero__copy { padding-bottom: 32px; }
 }
