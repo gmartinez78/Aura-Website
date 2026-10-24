@@ -83,7 +83,7 @@ a.chip:hover { border-color: var(--aura-grape); color: var(--aura-grape); }
   backdrop-filter: blur(16px);
   box-shadow: 0 10px 30px rgba(10, 2, 20, .18);
 }
-.logo { font-family: var(--font-display); font-size: 1.75rem; font-weight: 700; letter-spacing: -0.02em; color: var(--aura-ink); text-decoration: none; transform: translateY(3px); }
+.logo { position: absolute; left: 50%; font-family: var(--font-display); font-size: 1.75rem; font-weight: 700; letter-spacing: -0.02em; color: var(--aura-ink); text-decoration: none; transform: translate(-50%, 3px); }
 .logo img { height: 32px; width: auto; }
 .nav__toggle { display: inline-flex; align-items: center; justify-content: center; width: var(--tap-min); height: var(--tap-min); border-radius: var(--radius-sm); border: 1px solid var(--aura-sand); background: var(--aura-surface); color: var(--aura-ink); cursor: pointer; }
 .nav__toggle svg { width: 22px; height: 22px; }
@@ -96,7 +96,7 @@ a.chip:hover { border-color: var(--aura-grape); color: var(--aura-grape); }
   .nav__toggle { display: none; }
   .site-header__cta { display: inline-flex; position: absolute; top: 50%; right: 18px; transform: translateY(-50%); }
   .nav__menu, .nav__menu.is-open { display: flex; flex-direction: row; align-items: center; gap: var(--space-8); position: static; padding: 0; background: none; border: 0; box-shadow: none; font-size: 0.9375rem; }
-  .nav__menu, .nav__menu.is-open { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+  .nav__menu, .nav__menu.is-open { position: absolute; top: 50%; left: 18px; transform: translateY(-50%); }
 }
 
 /* ---------- Hero ---------- */
