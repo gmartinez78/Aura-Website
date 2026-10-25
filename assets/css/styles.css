@@ -48,7 +48,7 @@ a:hover { color: var(--aura-grape-hover); }
   transition: background-color .2s ease, color .2s ease, border-color .2s ease, transform .2s ease;
 }
 .btn:active { transform: translateY(1px); }
-.btn svg { width: 20px; height: 20px; flex-shrink: 0; }
+.btn svg { order: 2; width: 20px; height: 20px; flex-shrink: 0; }
 .btn--primary { background: var(--aura-grape); color: #fff; }
 .btn--primary:hover { background: var(--aura-grape-hover); color: #fff; }
 .btn--outline { border-color: var(--aura-ink); color: var(--aura-ink); font-weight: 600; }
