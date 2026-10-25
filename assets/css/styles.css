@@ -32,6 +32,7 @@ a:hover { color: var(--aura-grape-hover); }
 .section__head--centered { align-items: center; margin-inline: auto; text-align: center; }
 .highlight-underline { position: relative; display: inline-block; z-index: 0; }
 .highlight-underline::after { content: ""; position: absolute; z-index: -1; left: -.08em; right: -.08em; bottom: .08em; height: .22em; background: #e8fb36; border-radius: 999px; transform: rotate(-1deg); }
+.nowrap { white-space: nowrap; }
 .section__head--split { max-width: none; }
 .muted { color: var(--aura-muted); }
 .lead { font-size: var(--fs-lead); color: var(--aura-muted); max-width: 540px; }
