@@ -27,6 +27,7 @@ a:hover { color: var(--aura-grape-hover); }
 .container { width: 100%; max-width: var(--container); margin: 0 auto; padding-inline: var(--page-gutter); }
 .section { padding-block: var(--section-y); }
 .section--white { background: var(--aura-surface); }
+.section--white#casos { padding-bottom: var(--space-6); }
 .section--ink { background: var(--aura-ink); color: #fff; }
 .section__head { display: flex; flex-direction: column; gap: var(--space-3); max-width: 720px; margin-bottom: var(--space-10); }
 .section__head--centered { align-items: center; margin-inline: auto; text-align: center; }
