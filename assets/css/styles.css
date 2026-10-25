@@ -224,7 +224,7 @@ a.chip:hover { border-color: var(--aura-grape); color: var(--aura-grape); }
   justify-content: center;
   margin: 0;
   pointer-events: auto;
-  cursor: crosshair;
+  cursor: url("../img/lightbulb-cursor.svg") 16 16, pointer;
   color: #e8fb36;
   font-size: clamp(3.25rem, 10.3vw, 9.75rem);
   font-weight: 700;
@@ -233,8 +233,6 @@ a.chip:hover { border-color: var(--aura-grape); color: var(--aura-grape); }
   text-transform: uppercase;
   text-shadow: 0 2px 4px rgba(15,3,24,.6), 0 8px 16px rgba(0,0,0,.5), 0 24px 48px rgba(0,0,0,.65), 0 40px 80px rgba(0,0,0,.35);
 }
-.hero--campaign .hero__headline-layer h1::after { content: "💡"; position: absolute; top: -.18em; right: -.02em; z-index: 3; font-size: clamp(1.5rem, 3vw, 3.5rem); line-height: 1; opacity: 0; transform: translateY(10px) rotate(12deg) scale(.7); filter: drop-shadow(0 0 0 rgba(232,251,54,0)); pointer-events: none; transition: opacity .3s ease, transform .35s ease, filter .35s ease; }
-.hero--campaign .hero__headline-layer h1:hover::after, .hero--campaign .hero__headline-layer h1:focus-visible::after { opacity: 1; transform: translateY(0) rotate(-8deg) scale(1); filter: drop-shadow(0 0 10px rgba(232,251,54,.95)) drop-shadow(0 0 24px rgba(232,251,54,.75)); }
 .hero--campaign .hero__headline-layer h1 > span:last-child { margin-left: .6em; }
 .hero--campaign .hero__headline-layer h1 > span {
   display: block;
