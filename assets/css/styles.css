@@ -57,6 +57,8 @@ a:hover { color: var(--aura-grape-hover); }
 .btn--ink:hover { background: var(--aura-grape); color: #fff; }
 .btn--peach { background: var(--aura-peach); color: var(--aura-ink); }
 .btn--peach:hover { background: #fff; color: var(--aura-ink); }
+.btn--tertiary { min-height: 42px; padding: 10px 16px; border-color: var(--aura-grape); background: transparent; color: var(--aura-grape); font-size: .9rem; }
+.btn--tertiary:hover { background: var(--aura-lilac); color: var(--aura-grape-deep); }
 .btn--outline-light { border-color: rgba(255,255,255,.6); color: #fff; font-weight: 600; }
 .btn--outline-light:hover { background: #fff; color: var(--aura-ink); }
 .btn--block { width: 100%; }
