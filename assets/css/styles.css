@@ -658,6 +658,10 @@ a.chip:hover { border-color: var(--aura-grape); color: var(--aura-grape); }
 .wa-bar__text { flex-grow: 1; font-size: .8125rem; font-weight: 600; }
 .wa-bar .btn { padding: 0 16px; font-size: .875rem; }
 @media (min-width: 768px) { .wa-bar { display: none; } }
+.wa-float { position: fixed; right: 22px; bottom: 24px; z-index: 61; display: grid; place-items: center; width: 58px; height: 58px; border-radius: 50%; background: #25d366; color: #fff; box-shadow: 0 10px 24px rgba(10, 80, 40, .28); transition: transform .2s ease, box-shadow .2s ease; }
+.wa-float svg { width: 30px; height: 30px; }
+.wa-float:hover { color: #fff; transform: translateY(-3px); box-shadow: 0 14px 28px rgba(10, 80, 40, .34); }
+@media (max-width: 767px) { .wa-float { display: none; } }
 
 /* ---------- Página de precios ---------- */
 .page-hero { padding-block: var(--space-12) var(--space-8); display: flex; flex-direction: column; gap: var(--space-4); max-width: 760px; }
