@@ -371,7 +371,7 @@ a.chip:hover { border-color: var(--aura-grape); color: var(--aura-grape); }
 .logos .logo-card--fake span { font-family: var(--font-display); font-size: 1.35rem; font-weight: 800; letter-spacing: .14em; opacity: .62; }
 .logos img { max-height: 32px; width: auto; filter: grayscale(1); opacity: .8; }
 .industries { display: flex; flex-wrap: wrap; gap: 10px; }
-@media (min-width: 768px) { .logos { grid-template-columns: repeat(6, minmax(0, 1fr)); gap: var(--space-4); } }
+@media (min-width: 768px) { .logos { display: flex; align-items: center; justify-content: space-between; gap: 0; } .logos li { flex: 1 1 0; } }
 
 /* ---------- Muestras de clientes ---------- */
 .client-showcase { display: grid; grid-template-columns: minmax(86px, 1fr) minmax(150px, 1.8fr) minmax(86px, 1fr); grid-template-areas: "one phone two" "three phone four" "five phone six" "seven phone eight"; gap: 12px; align-items: center; }
