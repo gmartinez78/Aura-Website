@@ -585,7 +585,8 @@ a.chip:hover { border-color: var(--aura-grape); color: var(--aura-grape); }
 .inquiry-copy li::before { content: "✓"; display: inline-grid; place-items: center; width: 20px; height: 20px; margin-right: 10px; border: 1px solid var(--aura-grape); border-radius: 50%; color: var(--aura-grape); font-size: .75rem; }
 .inquiry-direct { color: var(--aura-grape); font-weight: 700; text-decoration: none; }
 .inquiry-contact { display: flex; flex-direction: column; align-items: flex-start; gap: 4px; margin-top: 24px; }
-.inquiry-contact img { width: 128px; height: 128px; object-fit: cover; border-radius: 18px; }
+.inquiry-contact__photo { width: 156px; height: 156px; overflow: hidden; border-radius: 18px; }
+.inquiry-contact__photo img { width: 100%; height: 100%; object-fit: cover; object-position: center 28%; transform: scale(1.1); }
 .inquiry-contact strong { font-family: var(--font-display); font-size: 1.2rem; color: var(--aura-ink); }
 .inquiry-contact span { color: var(--aura-muted); font-size: .9rem; }
 .inquiry-whatsapp { margin-top: 10px; text-align: center; text-decoration: none; }
