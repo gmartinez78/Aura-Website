@@ -575,7 +575,7 @@ a.chip:hover { border-color: var(--aura-grape); color: var(--aura-grape); }
 .inquiry-section { background: #fff; }
 .inquiry-layout { display: grid; gap: var(--space-10); }
 .inquiry-copy { display: flex; flex-direction: column; align-items: flex-start; gap: 18px; }
-.inquiry-copy h2 { max-width: 560px; font-size: clamp(2.7rem, 5vw, 5.2rem); line-height: .95; }
+.inquiry-copy h2 { max-width: 560px; font-size: clamp(2rem, 3.6vw, 3.7rem); line-height: 1; }
 .inquiry-copy h2 em { font-family: var(--font-display); font-weight: 400; }
 .inquiry-copy ul { display: flex; flex-direction: column; gap: 12px; margin: 10px 0; padding: 0; list-style: none; color: var(--aura-muted); }
 .inquiry-copy li::before { content: "✓"; display: inline-grid; place-items: center; width: 20px; height: 20px; margin-right: 10px; border: 1px solid var(--aura-grape); border-radius: 50%; color: var(--aura-grape); font-size: .75rem; }
