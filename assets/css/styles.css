@@ -104,6 +104,7 @@ a.chip:hover { border-color: var(--aura-grape); color: var(--aura-grape); }
   .nav__toggle { display: none; }
   .site-header__actions { display: flex; align-items: center; gap: 10px; position: absolute; top: 50%; right: 18px; transform: translateY(-50%); }
   .site-header__diagnostic { display: inline-flex; min-height: 40px; padding: 10px 14px; border: 1px solid var(--aura-grape); border-radius: 999px; background: transparent; color: var(--aura-grape); font-size: .78rem; font-weight: 700; text-decoration: none; white-space: nowrap; }
+  .site-header__cta { font-size: .78rem; }
   .site-header__diagnostic:hover { background: var(--aura-lilac); color: var(--aura-grape-deep); border-color: var(--aura-grape); }
   .site-header__cta { display: inline-flex; position: static; transform: none; white-space: nowrap; }
   .nav__menu, .nav__menu.is-open { display: flex; flex-direction: row; align-items: center; gap: var(--space-8); position: static; padding: 0; background: none; border: 0; box-shadow: none; font-size: 0.9375rem; }
