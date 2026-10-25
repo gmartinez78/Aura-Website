@@ -370,6 +370,9 @@ a.chip:hover { border-color: var(--aura-grape); color: var(--aura-grape); }
 .logos .logo-card--fake { background: transparent; border: 0; color: var(--aura-ink); }
 .logos .logo-card--fake span { font-family: var(--font-display); font-size: 1.35rem; font-weight: 800; letter-spacing: .14em; opacity: .62; }
 .logos img { max-height: 32px; width: auto; filter: grayscale(1); opacity: .8; }
+.logos img { filter: grayscale(1) brightness(.55) contrast(.9); opacity: .72; }
+.logos .logo-card--relinda img, .logos li:nth-child(2) img, .logos .logo-card--blue-tech img { filter: grayscale(1) brightness(.55) contrast(.9); opacity: .72; }
+.logos .logo-card--fake span { color: #777; opacity: 1; }
 .industries { display: flex; flex-wrap: wrap; gap: 10px; }
 @media (min-width: 768px) { .logos { display: flex; align-items: center; justify-content: space-between; gap: 0; } .logos li { flex: 1 1 0; } }
 
